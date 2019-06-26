@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- ADD SEO HERE -->
+    <title>./Learn | Introduction to Java</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideBar.css">
+    <link rel="stylesheet" href="introJavaCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="introJavaScript.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header>
+      <div id="include"></div>
+    </header>
+    <div id="includeSideBar"></div>
+    <div class="tutorialSect">
+      <h1>Lesson 3: Objects, Classes, and Methods</h1>
+      <h3>Lesson 3 Video:</h3>
+      <br>
+      <div class="videoCont">
+	<iframe src="https://www.youtube.com/embed/M2AOQ8IJTS0" class="video"></iframe>
+      </div>
+	<h3>Objects:</h3>
+	<div class="subSect">
+	  <p>
+	    If you remember back to the last lesson we learned about variables
+	    and made a few ourselves. Some of which we called height, width,
+	    and area. Now let’s pretend that these were attributes of a
+	    rectangle, and we wanted to store these together as a rectangle.
+	    Well this is where we use objects. We could make a Rectangle
+	    object with certain height and width variables grouped together.
+	  </p>
+	  <br>
+	  <p>
+	    Objects are essentially groupings of variables and methods, and
+	    they allow us to keep things more organized. For example, in the
+	    event we want to make several rectangles, we can just make several
+	    rectangle objects rather than making all the variables of a
+	    rectangle’s multiple times. Storing the data as multiple rectangles
+	    as opposed to multiple, heights, widths, and area’s allows for
+	    better organization of the data. In addition to variables our
+	    objects also have methods we can use on them: let's define what a method is.
+	  </p>
+	</div>
+	<br><br>
+	<h3>Methods:</h3>
+	<div class="subSect">
+	  <div class="rightPic3">
+	    <img src="3.2methodExample.PNG">
+	    <p>
+	      Sorry if this picture is a bit confusing, but it is meant to
+	      demonstrate how you can use methods for code reuse. If we take
+	      a look at our main program let's say we wanted to find the
+	      perimeter of three rectangles that we have created. We could
+	      write the instructions to get the perimeter of the rectangle
+	      three times each corresponding to a separate rectangle. Or we could
+	      do something like we have done here. We could make a method
+	      that would get the perimeter of any rectangle and return
+	      that perimeter value. We could then just call this method
+	      three times instead of writing the instructions three times.
+	    </p>
+	  </div>
+	  <div class="leftText2">
+	    <p>
+	      Methods are a collection of instructions that perform a
+	      specified task. Let’s say we made a rectangle object and
+	      we want to find its perimeter. We might use a method called
+	      find perimeter. Inside that method it would sum up the four
+	      sides of the rectangle and return that value.
+	    </p>
+	    <br>
+	    <p>In theory we wouldn’t really even need to know how a method works
+	      in order to use it. For example let’s say you wanted to
+	      find the length of a word. You could just use Java’s
+	      built in length method for strings. You don’t need to
+	      know about the algorithm inside the method that is used to find
+	      the length of the word. You just need to call the length
+	      method and know what it does. Which of course, it just
+	      returns the length.  
+	    </p>
+	  </div>
+	</div>
+	<br><br>
+	<h3>Classes:</h3>
+	<div class="subSect">
+	  <div class="rightPic3v2">
+	    <img src="3.3classesExample.PNG">
+	  </div>
+	  <div class="leftText2">
+	    <p>
+	      Classes are the instructions or templates for the
+	      objects to be created. If we think back to our
+	      hypothetical rectangle objects. How would Java
+	      know what variables and methods should be stored
+	      in a rectangle. That is why we would need a Rectangle
+	      class which would serve as a guide for the creation of objects.
+	    </p>
+	    <br>
+	    <p>
+	      So if we wanted to make three rectangle objects. What we
+	      would end up doing is using the Rectangle class to create
+	      3 different instances of a rectangle. (Another way to think
+	      of objects is that they are instances of their class) Each
+	      rectangle would have the same methods and kinds of variables,
+	      but the variables could hold different values. In other
+	      words, all rectangles will have a height variable, but their
+	      height variables could all be different.
+	    </p>
+	  </div>
+	</div>
+	<br><br>
+	<h3>Example: Constructing Objects</h3>
+	<div class="subSect">
+	  <p>Here we are going to make some rectangle objects<br> using
+	    a Rectangle class that Java already has for us.
+	  </p>
+	  <div class="rightText">
+	    <h4>Click the buttons to see what happens after each line of code</h4>
+	    <div class="bgroup1" >
+	      <button class="toggleButt" onclick="change3ex4(1)">
+		import java.awt.Rectangle;</button><br>
+	      <button class="toggleButt" onclick="change3ex4(2)">
+		Rectangle rect1 = new Rectangle();</button><br>
+	      <button class="toggleButt" onclick="change3ex4(3)">
+		Rectangle rect2 = new Rectangle(50, 100);</button>
+	      <br>
+	      <br>
+	    </div>
+	  </div>
+	  <div class="leftCodeEX">
+	    <img src="3.4newObject.PNG" alt="New Object Example">
+	  </div>
+	  <br>
+	  <div class="TextExp">
+	    <div id="3ex4"></div>
+	  </div>
+	  <br>
+	  <div id="hideB2">
+	  </div>
+	</div>
+	<br><br>
+	<h3>Example: Calling Methods</h3>
+	<div class="subSect">
+	  <p>Let's see what a couple calls to methods <br>
+	    in the retangle class look like.
+	  </p>
+	  <div class="rightText">
+	    <h4>Try to determine what is printed then
+	      click the buttons to see what happens after each line of code</h4>
+	    <div class="bgroup1" >
+	      <br><br><br><br><br><br>
+	      <button class="toggleButt" onclick="change3ex5(1)">
+		double rectHeight2 = rect2.getHeight();
+	      </button>
+	      <button class="toggleButt" onclick="change3ex5(2)">
+		double rectHeight1 = rect1.getHeight();
+	      </button>
+	      <button class="toggleButt" onclick="change3ex5(3)">
+		System.out.println(rectHeight1);<br>
+		System.out.println(rectHeight2);
+	      </button>
+	      <button class="toggleButt" onclick="change3ex5(4)">
+		rect1.setSize(20,75);<br>
+		rectHeight1 = rect1.getHeight();<br>
+		double rectWidth1 = rect2.getWidth();
+	      </button>
+	      <button class="toggleButt" onclick="change3ex5(5)">
+		System.out.println(rectWidth1);<br>
+		System.out.println(rectHeight1);
+		</button>
+	      <br>
+	      <br>
+	    </div>
+	  </div>
+	  <div class="leftCodeEX">
+	    <img src="3.5callMethods.png" alt="calling Methods Example">
+	  </div>
+	  <br>
+	  <div class="TextExpLarge">
+	    <div id="3ex5"></div>
+	  </div>
+	  <br>
+	  <div id="hideB5">
+	  </div>
+	  <p>
+	    If you want to play around with Java's rectangle class some more,
+	    the full documentation can be found here:
+	  </p>
+	  <p>
+	    <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html">
+	      https://docs.oracle.com/javase/8/docs/api/java/awt/Rectangle.html
+	    </a>
+	  </p>
+	  <br>
+	</div>
+	<br><br>
+	
+	<h3>Calling Methods: Format and Definition</h3>
+	<div class="subSect">
+	  <div class="rightPic3v2">
+	    <img src="3.6methodFormat.PNG">
+	  </div>
+	  <div class="leftText2">
+	  <p>
+	    The picture to the right demonstrates the reoccurring format
+	    used when calling a method.
+	  </p>
+	  <p>Here are some terms that are part of method calls</p>
+	  <ul>
+	    <li><strong>Implicit Parameter: </strong>The object that the method is being
+	      called on.</li>
+	    <li><strong>Method Name: </strong>The name of the method being called</li>
+	    <li><strong>Explicit Parameter: </strong>These are the arguments enclosed
+	      inside a methods parentheses, they are the arguments you may send to
+	      a method. In our example it was the width and height we sent.</li>
+	  </ul>
+	  </div>
+	</div>
+	<br><br><br><br><br>
+    </div>
+  </body>
+</head>

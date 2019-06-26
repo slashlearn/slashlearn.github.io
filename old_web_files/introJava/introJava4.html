@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- ADD SEO HERE -->
+    <title>./Learn | Introduction to Java</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideBar.css">
+    <link rel="stylesheet" href="introJavaCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="introJavaScript.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header>
+      <div id="include"></div>
+    </header>
+    <div id="includeSideBar"></div>
+    <div class="tutorialSect">
+      <h1>Lesson 4: Creating our Own Class</h1>
+      <h3>Lesson 4 Video:</h3>
+      <br>
+      <div class="videoCont">
+	<iframe src="https://www.youtube.com/embed/XMjmXbBZP3w" class="video"></iframe>
+      </div>
+      <h3>Intro:</h3>
+      <div class="subSect">
+      <p>This lesson is a bit more hands on, so I'd highly recommend you watch
+	and follow along with the video otherwise this written part might
+	be a bit confusing. This written part is going to be a walkthrough writing
+	our Person class. 
+      </p>
+      </div>
+      <br><br>
+      <h3>Instance Fields and Constructors:</h3>
+      <div class="subSect">
+	<div class="centerExTitle">
+	<p>Here we attempt to make a new Person in our main method, and we also
+	  set up our Person class.
+	</p>
+	<p>Click the buttons!</p>
+	</div>
+	  <div id="personClass1"><img src="4.1.1ex.png">
+	  </div>
+	<br>
+	<div class="dirButton">
+	  <button onclick="change4l1e(1)">1. Set Up</button>
+	  <button onclick="change4l1e(2)">2. Instance Fields</button>
+	  <button onclick="change4l1e(3)">3. Access Specifier</button>
+	  <button onclick="change4l1e(4)">4. Person sally = new Person();</button>
+	  <button onclick="change4l1e(5)">5. Person john = new Person("John", 25, 150);</button>
+	  <button onclick="change4l1e(6)">6. Constructors Extra Info</button>
+	</div>
+	<div id="hideB1">
+	</div>
+      </div>
+      <br><br>
+      
+      <h3>Making Methods:</h3>
+      <div class="subSect">
+	<div class="rightPic3v2">
+	  <p>Here we see examples of two methods I have created</p>
+	  <img src="methodParts.png">
+	</div>
+	<div class="leftText2">
+	  <p>
+	    In the next two sections we are going to be creating our own methods,
+	    but before we do that let's go over some important parts of a method.
+	  </p>
+	  <ul>
+	    <li><strong>access specifier:</strong>This can be public or private. If it
+	      is public it means that the method can be used from outside the class, if it
+	      is private it means the method can only be called from other methods inside the
+	      same class
+	    </li>
+	    <li><strong>Return Type:</strong>The type of the value that is to be returned.
+	      In the picture the second method has the return type of void and this is
+	      used if nothing is being returned.
+	    </li>
+	    <li><strong>Method Name: </strong>The name of the method</li>
+	    <li><strong>Explicit Parameter(s): </strong>These are the arguments enclosed
+	      inside a methods parentheses, they are the arguments you may send to
+	      a method. You can have any amount of explicit parameters.
+	    </li>
+	    <li><strong>Method Body: </strong>This is where the implementation of the
+	      method takes place. In other words, this is where you write the code for what the
+	      method will do.
+	    </li>
+	  </ul>
+	</div>
+      </div>
+      <br><br>
+      
+      <h3>Setter Methods:</h3>
+      <div class="subSect">
+	<div class="centerExTitle">
+	  <p>Here we make and use "Setter" methods.
+	  </p>
+	  <p>Click the buttons!</p>
+	</div>
+	<div id="personClass2"><img src="4.2.1ex.png">
+	</div>
+	<br>
+	<div class="dirButton">
+	  <button onclick="change4l2e(1)">1. Set Up</button>
+	  <button onclick="change4l2e(2)">2. Before Method Calls</button>
+	  <button onclick="change4l2e(3)">3. sally.setName("Sally");</button>
+	  <button onclick="change4l2e(4)">4. sally.setAge(25);</button>
+	  <button onclick="change4l2e(5)">5. sally.setWeight(140);</button>
+	  <button onclick="change4l2e(6)">6. Mutators</button>
+	</div>
+	<div id="hideB2">
+	</div>
+      </div>
+      <br><br>
+
+      <h3>Getter Methods:</h3>
+      <div class="subSect">
+	<div class="centerExTitle">
+	  <p>Here we make and use "Getter" methods.
+	  </p>
+	  <p>Click the buttons!</p>
+	</div>
+	<div id="personClass3"><img src="4.3.1ex.png">
+	</div>
+	<br>
+	<div class="dirButton">
+	  <button onclick="change4l3e(1)">1. Set Up</button>
+	  <button onclick="change4l3e(2)">2. Before Method Calls</button>
+	  <button onclick="change4l3e(3)">3. String sallyName = sally.getName();</button>
+	  <button onclick="change4l3e(4)">4. System.out.println(sallyName);</button>
+	  <button onclick="change4l3e(5)">5. System.out.println(john.getAge());</button>
+	  <button onclick="change4l3e(6)">6. System.out.println(john.getWeight());</button>
+	  <button onclick="change4l3e(7)">7. Accessors</button>
+	</div>
+	<div id="hideB3">
+	</div>
+	<p>Note: save your Person class we will be using it in the
+	  future. 
+	</p>
+      </div>
+      <br><br>
+
+      <h3>Exercise 4.1</h3>
+      <div class="subSect">
+	<div id="exer4p1ans"></div>
+	<div class="leftText2">
+	  <p><strong>Description: </strong>Congratulations! writing the Person
+	    class means you have officially written your first Java Class. Now you are
+	    going to expand on your knowledge of classes build another class by yourself.
+	  </p>
+	  <br>
+	  <p><strong>Instructions: </strong>
+	  </p>
+	  <ol>
+	    <li>Create a class titled "Circle"</li>
+	    <li>Give the Circle class two instance variables a String called color
+	      and a double called radius.
+	    </li>
+	    <li>
+	      Create a default constructor which gives the color a
+	      default value of "Blue" and the radius the default value of 1
+	    </li>
+	    <li>
+	      Create a method called setColor and setRadius. These should
+	      set appropriate instance variables to values passed as explicit
+	      parameters. (These methods should not return anything)
+	    </li>
+	    <li>
+	      Create two methods called getColor and getRadius. These should
+	      return the appropriate instance variables.
+	    </li>
+	    <li>
+	      Create a method called getArea which will return the area of a
+	      particular circle as a double. (The area of a circle is pi * radius * radius,
+	      simply use 3.14 for pi value)<br>Hint: area is not an instance
+	      field so in the method you will calculate the area and return
+	      it.
+	    </li>
+	  </ol>
+	  <div class="dirButton">
+	    <button onclick="change4l1Exercise()">Reveal Answer</button>
+	  </div>
+	</div>
+	<br>
+      </div>
+      <br><br>
+
+      <h3>Exercise 4.2</h3>
+      <div class="subSect">	
+	<p><strong>Description: </strong>This exercise is what we call tracing
+	  and these types of questions will frequently appear on exams. As a
+	  side note when I was a student. I hated these types of questions because
+	  I thought they were useless, but tracing is actually a beneficial skill to have. It helps
+	  when there is a bug in your code and you need to look line by line through
+	  your code to see what it is doing. It will also help if you are ever in
+	  a situation where you are looking at someone else's code and you need to figure
+	  out what it does. For example, as a software engineer part of you job might
+	  be to figure out and debug code written by a colleague.
+	</p>
+	<br>
+	<p><strong>Instructions: </strong> Look at the following main method and Person
+	  class, and determine what is printed to the console at the end of the program.
+	</p>
+	<br>
+	<div class="rightPicL4Exer2">
+	  <img src="4.2exercisePerson.PNG">
+	</div>
+	<div class="leftPicL4Exer2">
+	  <img src="4.2exerciseExamples.PNG">
+	</div>
+	<br>
+	<div class="answerBox">
+	  <div id="l4Exer2Result"></div>
+	  <p>Enter Answer Here:</p>
+	  <textarea id="l4Exer2Answer" rows="5" cols="22"></textarea>
+	  <button onclick="check4l2Exercise(0)">Check Answer</button>
+	  <button onclick="check4l2Exercise(1)">Reveal Answer</button>
+	</div>
+      </div>
+      <br><br><br><br><br>
+    </div>
+  </body>
+</html>

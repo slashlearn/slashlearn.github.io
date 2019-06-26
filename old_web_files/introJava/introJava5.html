@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- ADD SEO HERE -->
+    <title>./Learn | Introduction to Java</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideBar.css">
+    <link rel="stylesheet" href="introJavaCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="introJavaScript.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="include"></div>
+    </header>
+    <div id="includeSideBar"></div>
+    <div class="tutorialSect">
+      <h1>Lesson 5: Primitive Data Types, Casting, Reference vs. Value</h1>
+      <h3>Lesson 5 Video:</h3>
+      <br>
+      <div class="videoCont">
+	<iframe src="" class="video">Video Coming Soon</iframe>
+      </div>
+      <h3>Intro:</h3>
+      <div class="subSect">
+	<p>
+	If we think back to the last two lessons you might have noticed something.
+	When we declared some variables sometimes we used capitals for the type
+	like we did with
+	Person bobby = new Person(); or Rectangle rect1 = new Rectangle(); (Person
+	and Rectangle are capitalized) Other times
+	they were lower case, int width = 10; (int is lower case). This is because
+	Java categorizes variables in two ways: either they are one of the 8 primitive
+	types, or they are a reference to an object. Let's explore the primitive types
+	and object references further.
+	</p>
+      </div>
+      <br><br>
+
+      <h3>8 Primitive Types:</h3>
+      <div class="subSect">
+	<p>
+	  Primitive types are the basic building blocks of a Java
+	  program. If we make an analogy to chemistry we can think of
+	  them as the individual atoms of a molecule. 
+	</p>
+	<div id="centerIMG">
+	  <p>
+	    Below is a list
+	    of the 8 primitive types in Java:
+	  </p>
+	  <img src="5.1prim8types.PNG">
+	</div>
+	<br><br>
+      </div>
+      <br><br>
+      
+      <h3>Let's go a bit more in depth on the more commonly used primitive types</h3>
+      <div class="subSect">
+	
+	<div class="rightText2">
+	  <div class="rightPic6e2">
+	  <img src="5.2Integers.PNG">
+	</div>
+	  <p><strong>int: </strong></p>
+	  <ol>
+	    <li>Integers are whole numbers and can be positive or negative</li>
+	    <li>
+	       Integers have a limited range -2147483548 to 2147483547 which can cause
+	      <strong>overflow issues</strong>.
+	      This occurs when a integer has exceeded its maximum value and "wraps" around
+	      to become the most negative value. (see picture)
+	    </li>
+	    <li>
+	      Use the long primitive types if you need a larger range.
+	    </li>
+	  </ol>
+	</div>
+	<div class="leftText2">
+	  <div class="rightPic6e2">
+	  <img src="5.2Booleans.PNG">
+	</div>
+	  <p><strong>booleans: </strong></p>
+	  <ol>
+	    <li>booleans can hold only two values, either true of false.</li>
+	    <li>
+	      Will become useful later when we want to control the flow of
+	      a program. (If a boolean is true do something, if it is false
+	      do something else).
+	    </li>
+	    <li>
+	      You can initialize with value true or false, or with a boolean expression:
+	      an expression which will evaluate to true or false. (See second
+	      picture)
+	    </li>
+	  </ol>
+	  <br><br><br>
+	</div>
+	<div class="leftText2">
+	  <div class="rightPic6e2">
+	  <img src="5.2Doubles.PNG">
+	</div>
+	  <p><strong>double: </strong></p>
+	  <ol>
+	    <li>doubles can hold fractional/decimal values</li>
+	    <li>
+	      Limited range but it is so large (10^308) in most cases you do not have
+	      to worry.
+	    </li>
+	    <li>
+	      Be careful of rounding issues (see right picture). These occur because
+	      numbers are represented in the computer as binary 1's and 0's. In our
+	      decimal number system there are certain numbers that we can not represent
+	      exactly. For example the closest we can get to 1/3 is .3333 repeating. Similarly
+	      our computers can not represent some numbers exactly in binary.
+	    </li>
+	  </ol>
+	</div>
+      </div>
+      <br><br>
+      
+      <h3>Casting:</h3>
+      <div class="subSect">
+	<p>Casting occurs when you convert from one primitive type to another. For
+	  example, converting from a double to an int or int to double.
+	</p>
+	<p>
+	  There are two "kinds" of casting. One in which you will lose precision and one
+	  where you will gain precision. Let's look at an example for each.
+	</p>
+	<p>
+	  <strong>Click the buttons for an explaination.</strong>
+	</p>
+	<br>
+	<div class="rightText2">
+	  <div class="rightPic6e2">
+	    <img src="5.3doubleToInteger.PNG">
+	  </div>
+	  <p><strong>Gaining Precision: </strong></p>
+	  <br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="changeL5P3IntToDoub(1)">
+	      int intVariable = 5;</button>
+	    <button class="toggleButt" onclick="changeL5P3IntToDoub(2)">
+	      double doubleVariable = intVariable</button>
+	    <button class="toggleButt" onclick="changeL5P3IntToDoub(3)">
+	      System.out.println(intVariable);<br>
+	      System.out.println(doubleVariable);</button>
+	  </div>
+	  <div class="TextExpFull">
+	    <div id="5.3intToDoub"></div>
+	  </div>
+	  <br>
+	  <div id="hideIntToDoub">
+	  </div>
+	</div>
+	<div class="leftText2">
+	  <div class="rightPic6e2">
+	    <img src="5.3integerToDouble.PNG">
+	  </div>
+	  <p><strong>Losing Precision: </strong></p>
+	  <br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="changeL5P3DoubtoInt(1)">
+	      double doubleVariable = 7.6;</button>
+	    <button class="toggleButt" onclick="changeL5P3DoubtoInt(2)">
+	      int intVariable = (int) doubleVariable;</button>
+	    <button class="toggleButt" onclick="changeL5P3DoubtoInt(3)">
+	      System.out.println(intVariable);<br>
+	      System.out.println(doubleVariable);</button>
+	  </div>
+	  <div class="TextExpFull">
+	    <div id="5.3doubToInt"></div>
+	  </div>
+	  <br>
+	  <div id="hideDoubtoInt">
+	  </div>
+	</div>
+	<div class="TextExpLarge">
+	  <img src="gainLosePrecision.PNG" alt="flow char precision">
+	</div>
+      </div>
+      <br><br>
+
+      <h3>References:</h3>
+      <div class="subSect">
+	<p>Earlier we mentions how variable are either the type
+	  of one of the 8 primitive types or they are a reference
+	  to an object. References are the variables of objects, not
+	  primitive types, but to best understand what references are
+	  let's compare them to primitive types. 
+	</p>
+	<p>
+	  <strong>Click the buttons for an explaination.</strong>
+	</p>
+	<div class="rightText2">
+	  <div class="rightPic6e2">
+	    <img src="5.4Ref.png">
+	  </div>
+	  <p><strong>References: </strong></p>
+	  <br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="changeL5P4References(1)">
+	      Rectangle rect1 = new Rectangle(50,100); <br>
+	      Rectangle rect1 = new Rectangle(20,40)
+	    </button>
+	    <button class="toggleButt" onclick="changeL5P4References(2)">
+	      rect1 = rect2;</button>
+	    <button class="toggleButt" onclick="changeL5P4References(3)">
+	      rect1.setSize(30, 45);</button>
+	    <button class="toggleButt" onclick="changeL5P4References(4)">
+	      System.out.println(rect1.getHeight());<br>
+	      System.out.println(rect1.getWidth());<br>
+	      System.out.println(rect1.getHeight());<br>
+	      System.out.println(rect1.getWidth());</button>
+	  </div>
+	  <div class="TextExpFull">
+	    <div id="L5P4References"></div>
+	  </div>
+	  <br>
+	  <div id="hideL5P4References">
+	  </div>
+	</div>
+	
+	<div class="leftText2">
+	  <div class="rightPic6e2">
+	    <img src="5.4Prim.png">
+	  </div>
+	  <p><strong>Primitive Types: </strong></p>
+	  <br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="changeL5P4Primitive(1)">
+	      int x = 10;<br> int y = x;</button>
+	    <button class="toggleButt" onclick="changeL5P4Primitive(2)">
+	      y = 15;</button>
+	    <button class="toggleButt" onclick="changeL5P4Primitive(3)">
+	      System.out.println(x);<br>
+	      System.out.println(y);</button>
+	  </div>
+	  <div class="TextExpFull">
+	    <div id="L5P4Primitive"></div>
+	  </div>
+	  <br>
+	  <div id="hideL5P4Primitive">
+	  </div>
+	</div>
+      </div>
+      <br><br>
+
+      <h3>Exercise 5.1: </h3>
+      <div class="subSect">
+	<div class="rightText2">
+	  <div class="rightPic6e2">
+	    <div id="5L1EHint">
+	    </div>
+	    <div id="hide5L1E">
+	    </div>
+	  </div>
+	  <p>Click the buttons for hints:</p>
+	  <br><br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="change5L1E(1)">
+	      Rectangle rect1 = new Rectangle(25,50);<br>
+	      Rectangle rect2 = new Rectangle(100,200);</button>
+	    <button class="toggleButt" onclick="change5L1E(2)">
+	      Rectangle rect3 = rect2;</button>
+	    <button class="toggleButt" onclick="change5L1E(3)">
+	      rect3.setSize(42,100);</button>
+	    <button class="toggleButt" onclick="change5L1E(4)">
+	      rect2 = rect1;</button>
+	    <button class="toggleButt" onclick="change5L1E(5)">
+	      rect2.setSize(10,15);</button>
+	  </div>
+	</div>
+	<div class="leftText3">
+	  <p><strong>Directions: </strong>Trace through the following code and
+	    attempt to determine what is printed.
+	  </p>
+	  <img src="5L1ETracing.png">
+	  <div class="answerBox">
+	    <div id="L5E1Result"></div>
+	    <p>Enter Answer Here:<br> (getHeight and getWidth return <strong>doubles</strong>)</p>
+	    <textarea id="5L1EAnswerIn" rows="7" cols="22"></textarea>
+	    <button onclick="check5L1ECheck(0)">Check Answer</button>
+	    <button onclick="check5L1ECheck(1)">Reveal Answer</button>
+	  </div>
+	</div>
+      </div>
+      <br><br><br><br><br>
+    </div>
+  </body>
+</html>

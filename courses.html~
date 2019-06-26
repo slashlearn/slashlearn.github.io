@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Naevin | TennisStats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="resources/css/tennis_stats.css"> 
+    <link rel="stylesheet" href="resources/css/main.css"> 
+    <script src="resources/js/main_script.js" type="text/javascript"></script>
+  </head>
+
+  <body> 
+    <header>
+      <div id="include"></div>
+    </header>
+    
+    <!-- Welcome area -->
+    
+    <section id="tennis_stats_header">
+      <div class="container">
+        <h2>Tennis Statistics App</h2><br>
+        <h4><a href="https://play.google.com/store/apps/details?id=com.slashlearn.tennisstats">Download</a>
+          this app from the Google Play Store
+        </h4>
+        <h4><a href="https://github.com/Naevin/TennisStats">Github Link</a>
+          for this project
+        </h4>
+      </div>
+    </section>
+    
+    <section id="screen_shots">
+      <div class = "row m-5">
+        <div class="col-sm"><img src="resources/img/tennis_stats_ss1.jpg" class="img-fluid" alt="tennis_stats_ss1"></div>
+        <div class="col-sm"><img src="resources/img/tennis_stats_ss2.jpg" class="img-fluid" alt="tennis_stats_ss2"></div>
+        <div class="col-sm"><img src="resources/img/tennis_stats_ss3.jpg" class="img-fluid" alt="tennis_stats_ss3"></div>
+        <div class="col-sm"><img src="resources/img/tennis_stats_ss4.jpg" class="img-fluid" alt="tennis_stats_ss4"></div>
+        <div class="col-sm"><img src="resources/img/tennis_stats_ss5.jpg" class="img-fluid" alt="tennis_stats_ss5"></div>
+      </div>
+    </section>
+    
+    <br>
+    
+    <section class="explain_part">
+      <div class="container">
+        <div class = "row">
+          <div class="col">
+            <div id="section_header">
+              <h3>Why I Made This:</h3>
+            </div>
+          </div>
+        </div>  
+        <div class = "row">
+          <div class="col">
+            <div class="text_whitebg">
+              <p>
+                When I was younger my father drove me to all my tennis matches.
+                On the way back he would tell me about the things I did right and wrong… but mostly the things I did wrong. 
+                Being the stubborn kid I am, I wouldn't believe him and eventually he started 
+                bringing a clipboard to tally my match statistics.
+                That was a long time ago, and while there are many tennis tracker apps out there now that could've replaced that clipboard, 
+                they are all either limited in features or require one to pay for full functionality.
+              </p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <br>
+    
+    <section class="explain_part">
+      <div class="container">
+        <div class = "row">
+          <div class="col">
+            <div id="section_header">
+              <h3>What This App Does:</h3>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class="col">
+            <div class="text_whitebg">
+              <p>
+                This completely-free tennis statistics app allows users to track various data points of a match: aces, winners, unforced errors, etc.
+                Based of this, the app displays match statistics allowing users to gain key insight into their matches. 
+              </p>
+              <p>
+                Tennis Stats has online functionality as well. Users can create, save, and retrieve matches all via a cloud account. 
+                This ensures matches will never be lost and lets users share matches across multiple devices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <br>
+    
+    <section class="explain_part">
+      <div class="container">
+        <div class = "row">
+          <div class="col">
+            <div id="section_header">
+              <h3>What I Learned:</h3>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class="col">
+            <div class="text_whitebg">
+              <ul>
+                <li><strong>Android App Development:</strong> This was my first time making an Android App. I learned how to use activities, fragments, adapters, interfaces and how to communicate between them.</li>
+                <li>
+                  <strong>Firebase:</strong> This was also my first exposure to Firebase. I learned how to save, download, delete and upload files to the Firebase Storage. 
+                  I also learned how properly structure the database allowing for efficient retrieval and syncing of information.
+                </li>
+                <li><strong>Layouts and xml:</strong> I learned how to use the various android layouts and views to create an intuitive user interface. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <br>
+    
+    <section class="explain_part">
+      <div class="container">
+        <div class = "row">
+          <div class="col">
+            <div id="section_header">
+              <h3>Technologies I Used:</h3>
+            </div>
+          </div>
+        </div>
+        <div class = "row">
+          <div class="col">
+            <div class="text_whitebg">
+              <ul>
+                <li><strong>Java:</strong> The entire functionality of the app is done through Java. 
+                  I made use of Java's objected oriented nature to organize data into appropriate classes.</li>
+                <li>
+                  <strong>Firebase:</strong> The saving and retrieval of matches, the user accounts, and any other online feature rely on Firebase Storage.
+                </li>
+                <li><strong>Android Studio:</strong> I used Android Studio to develop the java and xml files used by this app.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <br><br><br>
+    
+  </body>
+  
+</html>

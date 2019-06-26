@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- ADD SEO HERE -->
+    <title>./Learn | Introduction to Java</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideBar.css">
+    <link rel="stylesheet" href="introJavaCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="introJavaScript.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header>
+      <div id="include"></div>
+    </header>
+    <div id="includeSideBar"></div>
+    <div class="tutorialSect">
+      <h1>Lesson 2: Types, Variables, and the Assignment Operator</h1>
+      <h3>Lesson 2 Video:</h3>
+      <br>
+      <div class="videoCont">
+	<iframe src="https://www.youtube.com/embed/MiNztUwpDQw" class="video"></iframe>
+      </div>
+      <h3>Types:</h3>
+      <div class="subSect">
+	<p>
+	  Whether it’s a word, number, or something more complex, Java needs to
+	  be able to categorize values, and it does so by “type.”
+	</p>
+	<p>
+	  Some examples of Types are:
+	</p>
+	<ul>
+	  <li>Integer: whole number &#8212ex: 5 </li>
+	  <li>Double: number that can hold a fractional value &#8212ex: 5.46 </li>
+	  <li>String:  sequence of characters &#8212ex: “Hello my name is Bobby”</li>
+	</ul>
+	<p>
+	  Types determine what operations you can use on them. For example:
+	</p>	
+	<div class="rightText">
+	  <br><br><br><br><br><br>
+	  <p>You are able to multiply two integers (5 * 2).
+	  </p>
+	  <br>
+	  <p>However, notice how when we try and multiply two
+	    strings Eclipse throws out an error. This is because the
+	    string type does not allow you
+	    to carry out the multiplication operation.
+	    (Multiplying two words together doesn’t really make sense)
+	  </p>
+	</div>
+	<div class="leftCodeEX">
+	  <img src="2.1types.PNG" alt="Types Example">
+	</div>
+	<br>
+      </div>
+      <br><br>
+
+      <h3>Variables:</h3>
+      <div class="subSect">
+	<p>Variables are where we store values for later use in the program.
+	  The values of variables can change, and you can perform operations
+	  on variables as well.
+	</p>
+	<br>
+	<p>Here are a few examples of “declaring” a variable in Java:</p>
+	<p>(declaring is just the fancy way of saying creating a variable)</p>
+	<div class="rightText">
+	  <h4>Click the buttons to see what happens after each line of code</h4>
+	  <br><br>
+	  <div class="bgroup1">
+	    <button class="toggleButt" onclick="change2(1)">int height = 100;</button>
+	    <button class="toggleButt" onclick="change2(2)">int width = height;</button>
+	    <button class="toggleButt" onclick="change2(3)">int area = height * width;</button>
+	    <br>
+	    <br>
+	  </div>
+	  <br><br>
+	</div>
+	<div class="leftCodeEX">
+	  <img src="2.2varDec.PNG" alt="Variable Declaration Example">
+	</div>
+	<br>
+	<div class="TextExp">
+	  <div id="ex2"></div>
+	</div>
+	<br>
+	<div id="hideB2">
+	</div>
+      </div>
+      <br><br>
+      <h3>Assignment (=):</h3>
+      <div class="subSect">
+	<p>What happens if we want to change the value of a variable. Well we
+	  can do this by re-assigning a value to that variable. We do this
+	  with the assignment operator (=). Something important to  remember
+	  is that in Java (=) does not mean a comparison for equality rather it
+	  is used to assign the value on the right hand side to the variable on
+	  the left hand side of the (=) operator. 
+	</p>
+	<p>Here are a few examples of the assignment operator being used. At
+	  first they are being used to declare variables, but later they
+	  are also being used to re-assign variables values:
+	</p>
+	<div class="rightText">
+	  <h4>Click the buttons to see what happens at each line of code</h4>
+	  <h4>Try to determine what is printed to the console</h4>
+	  <br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="change3(1)">int var1 = 10;<br> int var2 = 20;<br> int var3 = var1 + 5;</button>
+	    <br>
+	    <button class="toggleButt" onclick="change3(2)">var3 = var1;<br><br>var2 = var3;</button>
+	    <br>
+	    <button class="toggleButt" onclick="change3(3)">Answer</button>
+	    <br>
+	    <br>
+	  </div>
+	  <br><br>
+	</div>
+	<div class="leftCodeEX">
+	  <img src="2.3.assign.PNG" alt="Variable Declaration Example">
+	</div>
+	<br>
+	<div class="TextExp">
+	  <div id="ex3"></div>
+	</div>
+	<br>
+	<div id="hideB3">
+	</div>
+      </div>
+      <br><br>
+      <h3>Variable Naming Rules and Conventions:</h3>
+      <div class="subSect">
+	<p>
+	  Here are some variable naming <strong>rules</strong>. These will cause an error
+	  if you do not follow them.
+	</p>
+	<ol>
+	  <li>
+	    You can use numbers, letters, $, and underscores, but you can't
+	    start with a number
+	  </li>
+	  <li>
+	    No Spaces and most symbols are not allowed: % and & to name a few 
+	  </li>
+	  <li>
+	    Java has certain reserved words like public, private, and static you
+	    can not use these as your variable names; however, you can have them in your
+	    variable names.<br> For example:<br>
+	    -int public = 1;  This is not ok<br>
+	    -int publicSchoolID = 2841; This is ok
+	  </li>
+	</ol>
+	<br>
+	<p>
+	  Here are some naming <strong>conventions</strong>, these will not technically
+	  give you an error if you break them, but it is good practice to follow anyways.
+	</p>
+	<div class="rightPic2">
+	  <img src="2.4classVarNames.PNG" alt="class and var name example">
+	</div>
+	<div class="leftText2">
+	  <ol>
+	    <li>
+	      Variable and method names should start with lower case.
+	      (We will talk more on methods later)
+	    </li>
+	    <li>
+	      Class names should start with a Capital 
+	    </li>
+	    <li>
+	      Clear but Concise
+	    <li>
+	      Use camelCase. This is where we start variable names in lower case
+	      but capitalize everyword after the first in a variable name.
+	      <br> For example:<br>
+	      -bankAccount<br>
+	      -johnAdams
+	    </li>
+	  </ol>
+	  <p><strong>Side Note: </strong>Why might it be good practice to follow the
+	  conventions? Well this is the "standard" among Java programmers which
+	  means if you ever look at production level code it will follow these
+	  conventions. It is good practice to get in the habit of following these
+	  conventions now, so that if you perhaps work as a software engineer in
+	  the future other people will be able to read your code.
+	  </p>
+	</div>
+      </div>
+      <br><br>
+      <h3>Practice:</h3>
+      <div class="subSect">
+	<div id="centerIMG">
+	  <p>Here are a few examples of variable names try and determine
+	  if they are good variable names, will cause and error, or are
+	  bad convention. Click the reveal button to reveal answers.
+	  </p>
+	  <img src="2.5varExam.png">
+	</div>
+	<br>
+	<div class="dirButton">
+	  <button onclick="funct2l5e(1)">Reset</button>
+	  <button onclick="funct2l5e(0)">Reveal</button>
+	</div>
+      </div>
+      <br><br>
+      <h3>Extra Info:</h3>
+      <div class="subSect">
+	<div class="rightPic6e2">
+	  <img src="2.6.2.png">
+	</div>
+	<div class="leftPic6e2">
+	  <img src="2.6.1.png">
+	</div>
+	
+      </div>
+      <br><br>
+      
+      <h3>Exercise 2.1:</h3>
+      <div class="subSect">
+	<div class= "ansButton">
+	  <button onclick="functEx2Ans()">Reveal/Hide Answer</button>
+	</div>
+	<div id="exer2ans">
+	</div>
+	<div class="leftPic6e2">
+	  <img src="2.7.1.png">
+	</div>
+      </div>
+      <br><br><br><br><br>
+    </div>
+  </body>
+</html>

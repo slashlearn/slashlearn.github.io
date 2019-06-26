@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- ADD SEO HERE -->
+    <title>./Learn | Introduction to Java</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideBar.css">
+    <link rel="stylesheet" href="introJavaCSS.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="introJavaScript.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="include"></div>
+    </header>
+    <div id="includeSideBar"></div>
+    <div class="tutorialSect">
+      <h1>Lesson 6: Operators, Math Methods, Input</h1>
+      <h3>Lesson 6 Video:</h3>
+      <br>
+      <div class="videoCont">
+	<iframe src="" class="video">Video Coming Soon</iframe>
+      </div>
+      <h3>Arithmetic Operators</h3>
+      <div class="subSect">
+	<p>
+	  Arithmetic Operators are the math operations + , - , * , / that we
+	  are all familiar with. However, Java has a few other operators
+	  that may come in handy. We will dicuss these in first part of
+	  this lesson.
+	</p>
+      </div>
+      <br><br>
+
+      <h3>Operator: Modulus %</h3>
+      <div class="subSect">
+	<p>This operator gives the remainder when dividing. For example, 15%2 gives
+	  the result of 1 because 15/2 = 7 with a remainder of 1.
+	</p>
+	<p>
+	  <strong>Try to determine what is printed:</strong>
+	</p>
+	<br>
+	
+	<div class="rightText2">
+	  <div class="rightPic6e2">
+	    <img src="6.1.2Mod.png">
+	  </div>
+	  <div class="answerBox2">
+	    <div id="L6P2Result"></div>
+	    <p>Enter Answer Here:</p>
+	    <textarea id="L6P2AnswerIn" rows="2" cols="10"></textarea>
+	    <button onclick="checkL6P2(0)">Check Answer</button>
+	    <button onclick="checkL6P2(1)">Reveal Answer</button>
+	  </div>
+	</div>
+
+	<div class="leftText2">
+	  <div class="rightPic6e2">
+	    <img src="6.1.1Mod.png">
+	  </div>
+	  <div class="answerBox2">
+	    <div id="L6P1Result"></div>
+	    <p>Enter Answer Here:</p>
+	    <textarea id="L6P1AnswerIn" rows="2" cols="10"></textarea>
+	    <button onclick="checkL6P1(0)">Check Answer</button>
+	    <button onclick="checkL6P1(1)">Reveal Answer</button>
+	  </div>
+	</div>
+
+	<div class="leftText2">
+	  <div class="rightPic6e2">
+	    <img src="6.1.3Mod.png">
+	  </div>
+	  <div class="answerBox2">
+	    <div id="L6P3Result"></div>
+	    <p>Enter Answer Here:</p>
+	    <textarea id="L6P3AnswerIn" rows="2" cols="10"></textarea>
+	    <button onclick="checkL6P3(0)">Check Answer</button>
+	    <button onclick="checkL6P3(1)">Reveal Answer</button>
+	  </div>
+	</div>
+	
+      </div>
+      <br><br>
+      
+      <h3>Operator: Increment ++ and Decrement -- </h3>
+      <div class="subSect">
+	
+	<div class="rightText2">
+	  <p><strong>Decrement operator:</strong> This operator
+	  subtracts 1 from the variable value</p>
+	  <img src="6.2.2Decrement.PNG">
+	</div>
+	
+	<div class="leftText2">
+	  <p><strong>Increment operator:</strong> This operator
+	  adds 1 to the variable value</p>
+	  <img src="6.2.1Increment.PNG">
+	</div>
+
+	
+	<div class="rightText2">
+	  <p><br>
+	    The difference between pre and post incremenataion is
+	    when they occur. In pre-incrementation the +1 to i is
+	    <strong>first</strong> thing that happens when that line of code executes.
+	    In post-incrementation the +1 to i is that <strong>last</strong> thing
+	    that happens when the line of code executes. 
+	  </p>
+	  <div class="dirButton">
+	    <button onclick="changeL6P2(1)">System.out.println(++i);</button>
+	    vs.
+	    <button onclick="changeL6P2(2)">System.out.println(i++);</button>
+	  </div>
+	  <div class="TextExpFull">
+	    <div id="L6P2Increment">
+	    </div>
+	  </div>
+	  <div id="L6P2Hide">
+	  </div>
+	</div>
+	<div class="leftText2">
+	  <div class="rightText2">
+	  <p><strong>Post-incremenation:</strong></p>
+	  <img src="6.2.4PostIncrement.PNG">
+	  </div>
+	  <p><strong>Pre-incrementation:</strong></p>
+	  <img src="6.2.3PreIncrement.PNG">
+	</div>
+      </div>
+      <br><br>
+
+      <h3>Integer Division /: </h3>
+      <div class="subSect">
+	<div class="rightText2">
+	  <div class="rightPic6e2">
+	    <br><br><br><br>
+	    <div id="L6P3Hint">
+	    </div>
+	    <div id="hideL6P3">
+	    </div>
+	  </div>
+	  <p><br><br><br>Click the buttons for explanations:</p>
+	  <br><br>
+	  <div class="bgroup1" >
+	    <button class="toggleButt" onclick="changeL6P3(1)">
+	      System.out.println(x/y);</button>
+	    <button class="toggleButt" onclick="changeL6P3(2)">
+	      System.out.println(w/y);</button>
+	    <button class="toggleButt" onclick="changeL6P3(3)">
+	      System.out.println(x/z);</button>
+	    <button class="toggleButt" onclick="changeL6P3(4)">
+	      final output</button>
+	  </div>
+	</div>
+	<div class="leftText3">
+	  <p>
+	    When you divide two integers the answer will be another
+	    integer therefore, any potential remainder is ignored.
+	    <br><br> Examples:
+	  </p>
+	  <img src="L6P3IntegerDivision.PNG">
+	</div>
+      </div>
+      <br><br>
+
+      <h3>Order of Operations:</h3>
+      <div class="subSect">
+	<div class="rightText2">
+	   <p>
+	     Trace through the following code and try to determine
+	     what is printed. Hint: Don't forget about integer
+	     division!
+	   </p>
+	   <br>
+	   <img src="6.4OrderOfOps.PNG">
+	</div>
+	<div class="leftText2">
+	  <p>
+	    The order of operations in programming are the same as
+	    those in math. Casting has higher precedence over multiplication
+	    and division, but lower precedence than parentheses. 
+	  </p>
+	  <div class="answerBox2">
+	    <div id="L6P4Result"></div>
+	    <br>
+	    <p>Enter Answer Here:</p>
+	    <textarea id="L6P4AnswerIn" rows="4" cols="10"></textarea>
+	    <button onclick="checkL6P4(0)">Check Answer</button>
+	    <button onclick="checkL6P4(1)">Reveal Answer</button>
+	    
+	  </div>
+	</div>
+      </div>
+      <br><br>
+      
+      <h3>Math Methods: </h3>
+      <div class="subSect">
+	<div class="rightText2">
+	  <p>
+	    Here are few examples:
+	  </p><br>
+	  <img src="6.5MathMethods.png">
+	</div>
+	<div class="leftText2">
+	  <p>
+	    You might have been wondering what happens if I want to use
+	    more advanced math operations: square root, exponents, absolute values, etc.
+	    Well you can use methods from Java's built in math class! 
+	  </p><br>
+	  <p>
+	    The reference to Java's Math class can be found here.<br>
+	    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html">
+	      https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+	    </a>	    
+	  </p>
+	</div>
+      </div>
+      <br><br>
+      
+      <h3>Input:</h3>
+      <div class="subSect">
+	<p>So far our programs have not been interactive. In order for our programs
+	  to be interactive we need a way for our computers to collect input
+	  from the user. One way to do this is through the console where we have been
+	  printing information out. We can do this by using something called Java's
+	  Scanner class.
+	</p>
+	<br>
+	<div class="centerExTitle">
+	  <p>Click the buttons to see how to collect input!</p>
+	</div>
+	<div id="L6P5"></div>
+	<br>
+	<div class="dirButton">
+	  <button onclick="changeL6P5(1)">1. Set Up & Import</button>
+	  <button onclick="changeL6P5(2)">2. Scanner object</button>
+	  <button onclick="changeL6P5(3)">3. input.next()</button>
+	  <button onclick="changeL6P5(4)">4. input.next() quirk;</button>
+	  <button onclick="changeL6P5(5)">5. input.nextLine();</button>
+	</div>
+	<div id="hideL6P5">
+	</div>
+      </div>
+      <br><br>
+
+      <h3>Exercise 6.1</h3>
+      <div class="subSect">
+	<div id="L6P1ans"></div>
+	<div class="leftText2">
+	  <p><strong>Description: </strong>In this exercise you are going to use your
+	    new knowledge of Scanner input and math methods to make a small super
+	    useless program. Well sorta useless, it is useful because it is
+	    reinforcing your learning :P.
+	  </p>
+	  <br>
+	  <p><strong>Instructions: </strong>
+	  </p>
+	  <p>
+	    Write a program that asks for two numbers and prints the square root of
+	    the absolute value of their product. The numbers input to the console
+	    can be fractional values and can be negative. Use the math methods
+	    and Scanner class to accomplish this task!
+	  </p>
+	  <img src="6.6.2SampleRun.png">
+	  <div class="dirButton">
+	    <button onclick="changeL6E1()">Reveal Answer</button>
+	  </div>
+	</div>
+	<br>
+      </div>
+      <br><br>
+
+      
+      <br><br><br><br><br>
+    </div>
+  </body>
+</html>

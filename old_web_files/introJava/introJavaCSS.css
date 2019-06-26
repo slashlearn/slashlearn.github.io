@@ -1,0 +1,403 @@
+x/*table of contents styles*/
+#table1 table{
+    font-family: arial, sans-serif;
+    color: black;
+    font-size: 16px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+#table1 td, th {
+    border: 1px solid #AAD0EC;
+    text-align: left;
+    padding: 8px;
+}
+
+#table1 tr:nth-child(even) {
+    background-color: #AAD0EC;
+}
+
+.tutorialSect{
+    color:#002D72;
+    width:74%;
+    float:left;
+    padding-top:6%;
+    padding-left:15%;
+}
+.tutorialSect .videoCont{
+    position: relative;
+    width: 100%;
+    height: 0;
+    left: 10%;
+    padding-bottom: 50%;
+    text-align: center;
+}
+.tutorialSect .videoCont .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 90%;
+}
+
+
+.tutorialSect h1{
+    font-size:35px;
+}
+
+.tutorialSect h3{
+    margin: 0;
+    font-size:24px;
+}
+.tutorialSect .subSect{
+    overflow:hidden;
+    color: black;
+    padding: .7% 2% .7% 2%;
+    background: #D7ECFF;
+}
+
+.tutorialSect .subSect p{
+    /*text-indent:20px;*/
+    margin: 0;
+    font-size:18px;
+}
+.tutorialSect .subSect ol{
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+.tutorialSect .subSect ul{
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+/*---------- LESSON 1 STYLES ----------*/
+.tutorialSect .picCenter1{
+    text-align: center;
+}
+.tutorialSect .picCenter1 img{   
+    width: 85%;
+    border: 1px solid black;
+}
+
+.tutorialSect .subSect .rightPic{
+    float: right;
+    width: 35%
+}
+.tutorialSect .subSect .rightPic img{
+    padding: 1%;
+    width: 80%;
+}
+
+.tutorialSect .subSect .rightPicJ{
+    float: right;
+    width: 35%
+}
+.tutorialSect .subSect .rightPicJ img{
+    padding: 1%;
+    width: 80%;
+}
+
+.tutorialSect .subSect .leftText{
+    width: 60%;
+}
+/*---------- LESSON 1 STYLES END ----------*/
+
+
+/*---------- LESSON 2 STYLES ----------*/
+.tutorialSect .subSect .leftCodeEX img{   
+    width: 35%;
+    border: 1px solid black;
+}
+
+.tutorialSect .subSect .rightText{
+    width: 60%;
+    float: right;
+}
+.tutorialSect .subSect .rightText h4{
+    text-align: center;
+    font-size: 17px;
+}
+
+.tutorialSect .bgroup1 .toggleButt{
+    background: #ffffff;
+    text-align: left;
+    padding: 5px;
+    display: block;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+.tutorialSect .hideButton{
+    background: #002D72;
+    color: #ffffff;
+    padding: 5px;
+    display: block;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.tutorialSect .subSect .TextExp{
+    margin: auto;
+    width: 60%;
+}
+.tutorialSect .subSect .TextExp img{
+    width: 85%;
+}
+.tutorialSect .subSect .rightPic2{
+    float: right;
+    width: 45%
+}
+.tutorialSect .subSect .rightPic2 img{
+    padding: 1%;
+    width: 80%;
+}
+.tutorialSect .subSect .leftText2{
+    width: 49%;
+}
+.tutorialSect .subSect #centerIMG{
+    text-align: center;
+}
+.tutorialSect .subSect #centerIMG img{
+    width: 65%;
+}
+.tutorialSect .subSect .dirButton{
+    text-align: center;
+}
+.tutorialSect .subSect .dirButton button{
+    background: #002D72;
+    color: #ffffff;
+    padding: 7px 15px;
+    font-size: 17px;  
+    border: none;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tutorialSect .subSect .leftPic6e2{
+    width: 49%;
+}
+.tutorialSect .subSect .leftPic6e2 img{
+    width: 100%;
+}
+.tutorialSect .subSect .rightPic6e2{
+    float: right;
+    width: 49%;
+}
+.tutorialSect .subSect .rightPic6e2 img{
+    width: 100%;
+}
+
+.tutorialSect .subSect #exer2ans{
+    float: right;
+    width: 49%;
+}
+.tutorialSect .subSect #exer2ans img{
+    width:100%;
+}
+
+.tutorialSect .subSect .ansButton button{
+    background: #002D72;
+    color: #ffffff;
+    padding: 4px 8px;
+    font-size: 14px;  
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*---------- LESSON 2 STYLES END ----------*/
+
+/*---------- LESSON 3 STYLES ----------*/
+.tutorialSect .subSect .rightPic3{
+    float: right;
+    width: 45%
+}
+.tutorialSect .subSect .rightPic3 img{
+    padding: 1%;
+    width: 100%;
+}
+.tutorialSect .subSect .rightPic3v2{
+    text-align: center;
+    float: right;
+    width: 45%
+}
+.tutorialSect .subSect .rightPic3v2 img{
+    padding: 1%;
+    width: 90%;
+}
+.tutorialSect .subSect .TextExpLarge{
+    margin: auto;
+    width: 70%;
+}
+.tutorialSect .subSect .TextExpLarge img{
+    width: 100%;
+}
+/*---------- LESSON 3 STYLES END----------*/
+
+/*---------- LESSON 4 STYLES ----------*/
+.tutorialSect .subSect #personClass1{
+    text-align: center;
+}
+.tutorialSect .subSect #personClass1 img{
+    width: 85%;
+}
+.tutorialSect .subSect #personClass2{
+    text-align: center;
+}
+.tutorialSect .subSect #personClass2 img{
+    width: 85%;
+}
+.tutorialSect .subSect #personClass3{
+    text-align: center;
+}
+.tutorialSect .subSect #personClass3 img{
+    width: 85%;
+}
+.tutorialSect .subSect #exer4p1ans{
+    width: 45%;
+    float: right;
+}
+.tutorialSect .subSect #exer4p1ans img{
+    width: 90%;
+}
+.tutorialSect .subSect .centerExTitle{
+    text-align: center;
+}
+.tutorialSect .subSect .leftPicL4Exer2{
+    width: 49%;
+}
+.tutorialSect .subSect .leftPicL4Exer2 img{
+    width: 100%;
+}
+.tutorialSect .subSect .rightPicL4Exer2{
+    float: right;
+    width: 49%;
+}
+.tutorialSect .subSect .rightPicL4Exer2 img{
+    width: 80%;
+    height: 50%;
+    padding-bottom: 1%;
+}
+.tutorialSect .subSect .answerBox{
+    float: left;
+    width: 45%;
+}
+.tutorialSect .subSect .answerBox button{
+    background: #002D72;
+    color: #ffffff;
+    padding: 5px;
+    display: block;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+.tutorialSect .subSect .answerBox #l4Exer2Result{
+    text-align: center;
+    float: right;
+}
+.tutorialSect .subSect .answerBox #l4Exer2Result img{
+    width: 100%;
+}
+/*---------- LESSON 4 STYLES END----------*/
+
+/*---------- LESSON 5 STYLES ----------*/
+.tutorialSect .subSect .rightText2{
+    float: right;
+    width: 49%;
+}
+.tutorialSect .subSect .TextExpFull{
+    margin: auto;
+    width: 80%;
+}
+.tutorialSect .subSect .TextExpFull img{
+    width: 100%;
+}
+.tutorialSect .subSect .TextExpLarge{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+.tutorialSect .subSect .TextExpLarge img{
+    width: 80%;
+}
+.tutorialSect .subSect .leftText3{
+    width: 49%;
+    text-align:center;
+}
+.tutorialSect .subSect .answerBox{
+    width: 100%;
+    text-align:center;
+}
+.tutorialSect .subSect .answerBox #L5E1Result{
+    text-align: center;
+    float: right;
+}
+.tutorialSect .subSect .answerBox #L5E1Result img{
+    width: 100%;
+}
+/*---------- LESSON 5 STYLES END----------*/
+
+/*---------- LESSON 6 STYLES ----------*/
+.tutorialSect .subSect .answerBox2{
+    float: left;
+    width: 45%;
+}
+.tutorialSect .subSect .answerBox2 p{
+    font-size: 15px;
+}
+.tutorialSect .subSect .answerBox2 button{
+    background: #002D72;
+    color: #ffffff;
+    padding: 5px;
+    display: block;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+}
+.tutorialSect .subSect .answerBox2 #L6P1Result{
+    width: 40%;
+    float: right;
+}
+.tutorialSect .subSect .answerBox2 #L6P1Result img{
+    width: 100%;
+}
+.tutorialSect .subSect .answerBox2 #L6P2Result{
+    width: 40%;
+    float: right;
+}
+.tutorialSect .subSect .answerBox2 #L6P2Result img{
+    width: 100%;
+}
+.tutorialSect .subSect .answerBox2 #L6P3Result{
+    width: 40%;
+    float: right;
+}
+.tutorialSect .subSect .answerBox2 #L6P3Result img{
+    width: 100%;
+}
+.tutorialSect .subSect .answerBox2 #L6P4Result{
+    width: 45%;
+    float: right;
+}
+.tutorialSect .subSect #L6P5{
+    text-align: center;
+}
+.tutorialSect .subSect #L6P5 img{
+    width: 85%;
+}
+.tutorialSect .subSect #L6P1ans{
+    width: 45%;
+    float: right;
+}
+.tutorialSect .subSect #L6P1ans img{
+    width: 90%;
+}

@@ -1,0 +1,23 @@
+.sideBar {
+    height:100%;
+    width:13%;
+    position: fixed;
+    left: 0;
+    background-color: #eee;
+    padding-top: 8%;
+    z-index: 2;
+}
+
+.sideBar a {
+    text-align:center;
+    padding: 7px 5px 7px 5px;
+    text-decoration: none;
+    font-size: 22px;
+    color:#002D72;
+    display: block;
+}
+
+.sideBar a:hover {
+    color:#6babdd;
+    background-color:#ffffff;
+}
