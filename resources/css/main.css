@@ -1,5 +1,6 @@
 :root{
-    --main-blue: #00a5ff;
+/*    --main-blue: #00a5ff;*/
+    --main-blue: #002D72;
 }
 
 
@@ -14,18 +15,18 @@
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: #000000;
+    color: #FFFFFF;
     padding: 1rem;
 }
 /* change the link color and add padding for height */
 .navbar-custom .navbar-nav .nav-link {
-    color: #000000;
+    color: #FFFFFF;
     padding: 1rem;
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #FFFFFF;
+    color: #000000;
     /*background-color: #ee4400;*/ /* add background-color to active links */
 }
 
