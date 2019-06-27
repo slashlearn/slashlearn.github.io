@@ -9,6 +9,10 @@ body {
     height: 100%;
 }
 
+.blue_word {
+    color: var(--main-blue);
+}
+
 body #welcome {
     text-align: center;
 }

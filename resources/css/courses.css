@@ -16,7 +16,7 @@ body #about_me .course_title {
 body #about_me .course_box {
     background-color: white;
     margin: 1.5rem;
-    border: .2rem solid var(--main-blue);
+    border: .1rem solid var(--main-blue);
     border-radius: 5px;
 }
 body #about_me .course_icon {
@@ -25,7 +25,7 @@ body #about_me .course_icon {
 body #about_me .course_description {
     font-family: Comic Sans MS;
     padding: 1.5rem 1rem 1rem 1rem;
-    border-top: .2rem solid var(--main-blue);
+    border-top: .1rem solid var(--main-blue);
     /*margin: 1.5rem 1rem 1rem 1rem;*/
 }
 
