@@ -19,10 +19,14 @@ body #course_grid .course_title {
     color: var(--main-blue);
 }
 body #course_grid .course_box {
+    box-shadow: .3rem .3rem .6rem .6rem #ccc;
     background-color: white;
     margin: 1rem;
     border: .1rem solid var(--main-blue);
-    border-radius: 5px;
+    border-radius: 1rem;
+}
+body #course_grid .course_box:hover {
+    box-shadow: .0rem .0rem .4rem .4rem var(--main-blue);
 }
 body #course_grid .course_icon {
     padding: 1rem;

@@ -1,0 +1,39 @@
+body {
+    margin-top: 13%;
+    background-color: #FAFAFA;
+    /*background-color: #ebf5ff;*/  
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    height: 100%;
+}
+
+/*entire sign up form box*/
+body #signup_box {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: .1rem solid #ccc;
+    box-shadow: .1rem .1rem .2rem .2rem #ccc;
+    border-radius: 1rem;
+}
+
+
+
+
+/*sign up button*/
+body #create_account, #create_account:visited, #create_account:active {
+    outline: none;
+    color: var(--main-blue);
+    box-shadow: .2rem .2rem .3rem .3rem #ccc;
+    background-color: #FFFFFF;
+    padding: 2%;
+    font-size: 125%;
+    font-family: Trebuchet MS;
+    border: .3rem solid var(--main-blue);
+    border-radius: 1rem;
+
+}
+body #create_account:hover {
+        box-shadow: .0rem 0rem .2rem .2rem var(--main-blue);
+}
