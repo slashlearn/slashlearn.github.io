@@ -1,12 +1,22 @@
+const login_form = document.querySelector('#login_form');
+login_form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    var email = login_form['login_email'].value;
+    var pass = login_form['login_pass'].value;
 
-
-
-
-
-
-//logout function
-function logout() {
-    auth.signOut().then(() => {
-        console.log('user signed out');
+    //login to firebase
+    auth.signInWithEmailAndPassword(email, pass).then(cred => {
+        console.log(cred.user)
+        login_form.reset();
+    }).catch(function(error) {
+        //var errorCode = error.code;
+        var errorMessage = error.message;
+        login_error(errorMessage);
     });
+});
+
+//helper message for displaying login up errors
+function login_error(error_message) {
+    var error_box = document.getElementById("error_box");
+    error_box.innerHTML = error_message;
 }
