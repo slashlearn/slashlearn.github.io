@@ -28,7 +28,7 @@ body #sign_up, #sign_up:visited, #sign_up:active {
     font-family: Trebuchet MS;
     border: .2rem solid var(--main-blue);
     border-radius: 1rem;
-
+    margin-top: 2rem;
 }
 body #sign_up:hover {
         box-shadow: .0rem 0rem .2rem .2rem var(--main-blue);

@@ -1,0 +1,43 @@
+body {
+    margin-top: 13%;
+    background-color: #FAFAFA;
+    /*background-color: #ebf5ff;*/  
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    height: 100%;
+}
+
+/*entire login form box*/
+body #login_box {
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border: .1rem solid #ccc;
+    box-shadow: .1rem .1rem .2rem .2rem #ccc;
+    border-radius: 1rem;
+}
+
+
+/*login error message*/
+body #error_box {
+    color: red;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+/*login button*/
+body #login, #login:visited, #login:active {
+    outline: none;
+    color: var(--main-blue);
+    box-shadow: .2rem .2rem .3rem .3rem #ccc;
+    background-color: #FFFFFF;
+    padding: 2% 5% 2% 5%;
+    font-size: 125%;
+    font-family: Trebuchet MS;
+    border: .2rem solid var(--main-blue);
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+body #login:hover {
+    box-shadow: .0rem 0rem .2rem .2rem var(--main-blue);
+}

@@ -19,7 +19,11 @@ body #signup_box {
 }
 
 
-
+/*sign up error message*/
+body #error_box {
+    color: red;
+    margin: 0rem 0rem 1rem 0rem;
+}
 
 /*sign up button*/
 body #create_account, #create_account:visited, #create_account:active {
@@ -28,12 +32,12 @@ body #create_account, #create_account:visited, #create_account:active {
     box-shadow: .2rem .2rem .3rem .3rem #ccc;
     background-color: #FFFFFF;
     padding: 2%;
-    font-size: 125%;
+    font-size: 110%;
     font-family: Trebuchet MS;
-    border: .3rem solid var(--main-blue);
+    border: .2rem solid var(--main-blue);
     border-radius: 1rem;
-
+    margin-top: 1.5rem;
 }
 body #create_account:hover {
-        box-shadow: .0rem 0rem .2rem .2rem var(--main-blue);
+    box-shadow: .0rem 0rem .2rem .2rem var(--main-blue);
 }
