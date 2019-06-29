@@ -12,6 +12,12 @@
     font-weight: bold;
 	font-family: Comic Sans MS;
 }
+/*Default is none; shown by firebase*/
+.navbar-nav .loggedin,
+.navbar-nav .logged_out {
+    display: none;
+}
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {

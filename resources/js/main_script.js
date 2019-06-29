@@ -33,8 +33,6 @@ function setupUI(user) {
     }
 }
 
-
-
 //logout function
 function logout() {
     auth.signOut();
