@@ -9,10 +9,11 @@ signup_form.addEventListener('submit', (e) => {
     //if the pass match the create account
     if (String(pass) == String(confirm_pass)) {
         auth.createUserWithEmailAndPassword(email, pass).then(cred => {
-            console.log(cred.user);
             document.getElementById("error_box").innerHTML = "";
             signup_form.reset();
-            //TODO GET LOGIN INFO AND REDIRECT
+
+            //redirect to courses
+            window.location.replace("courses.html");
         }).catch(function(error) {
             //var errorCode = error.code;
             var errorMessage = error.message;

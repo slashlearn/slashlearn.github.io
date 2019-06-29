@@ -6,8 +6,10 @@ login_form.addEventListener('submit', (e) => {
 
     //login to firebase
     auth.signInWithEmailAndPassword(email, pass).then(cred => {
-        console.log(cred.user)
         login_form.reset();
+
+        //redirect to courses
+        window.location.replace("courses.html"); 
     }).catch(function(error) {
         //var errorCode = error.code;
         var errorMessage = error.message;
