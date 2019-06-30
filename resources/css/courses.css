@@ -26,7 +26,7 @@ body #course_grid .course_box {
     border-radius: 1rem;
 }
 body #course_grid .course_box:hover {
-    box-shadow: .0rem .0rem .4rem .4rem var(--main-blue);
+    box-shadow: .0rem .0rem .7rem .1rem var(--main-blue);
 }
 body #course_grid .course_icon {
     padding: 1rem;

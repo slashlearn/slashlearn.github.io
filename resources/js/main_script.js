@@ -21,6 +21,8 @@ auth.onAuthStateChanged(user => {
 function setupUI(user) {
     const logged_out_links = document.querySelectorAll('.logged_out');
     const logged_in_links = document.querySelectorAll('.logged_in');
+    //const logged_ignore = document.querySelectorAll('.logged_ignore');
+    //logged_ignore.forEach(item => item.style.display = 'block');
     if (user) {
         //user is logged in 
         logged_in_links.forEach(item => item.style.display = 'block');

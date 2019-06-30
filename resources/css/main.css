@@ -3,6 +3,11 @@
     --main-blue: #0083FF;
 }
 
+/*space class for bootstrap*/
+@media (min-width: 1200px) {
+    .mr-xl-15 {
+      margin-right: 13% !important;
+}
 
 .navbar-custom {
     background-color: var(--main-blue);
@@ -13,7 +18,7 @@
 	font-family: Comic Sans MS;
 }
 /*Default is none; shown by firebase*/
-.navbar-nav .loggedin,
+.navbar-nav .logged_in,
 .navbar-nav .logged_out {
     display: none;
 }
@@ -35,5 +40,7 @@
     color: #000000;
     /*background-color: #ee4400;*/ /* add background-color to active links */
 }
+
+
 
 
