@@ -1,0 +1,90 @@
+body {
+    margin-top: 13%;
+    background-color: #FAFAFA;
+    /*background-color: #ebf5ff;*/  
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    height: 100%;
+}
+
+/*main card section styles*/
+body .course_card {
+    margin: 0rem;
+    border: 0rem solid var(--main-blue);
+    box-shadow: .1rem .1rem .2rem .2rem #ccc;
+    border-radius: 1rem;
+}
+body .course_card_header {
+    color: var(--main-blue);
+    padding: 1rem;
+    background-color: #EEEEEE;
+    border-radius: 1rem;
+}
+body .course_card_body {
+    padding: 2%;
+    background-color: inherit;
+
+}
+body .course_card_button:active,
+body .course_card_button {
+    outline: none;
+    background-color: inherit;
+    /*color: white;*/
+    border: 0rem solid #ccc;
+	float: right;
+}
+body .course_card_button:hover{
+    background-color: inherit;
+    /*color: #000000;*/
+}
+
+
+/* sidebar styles */
+.sidebar {
+    font-size: 125%;
+}
+.sidebar_card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.sidebar_body {
+    margin: 1rem 0rem 0rem .3rem;
+}
+.sidebar .sidebar_item {
+    color: var(--main-blue);
+    list-style-type: square;
+    text-decoration: none;
+}
+.sidebar .sidebar_item:hover {
+    padding: .3rem;
+    box-shadow: .1rem .1rem .2rem .2rem #ccc;
+    border-radius: 1rem;
+}
+li span {
+    position: relative;
+    left: -.8rem;
+}
+.sidebar .sidebar_item a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+body .sidebar_button:active,
+body .sidebar_button {
+    outline: none;
+    background-color: inherit;
+    border: 0rem solid #ccc;
+	float: right;
+}
+
+
+/*button*/
+[data-toggle="collapse"] .fa:before {  
+    content: "\f139";
+}
+  
+[data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a";
+}
+

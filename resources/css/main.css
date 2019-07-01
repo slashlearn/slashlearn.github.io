@@ -3,20 +3,15 @@
     --main-blue: #0083FF;
 }
 
-/*space class for bootstrap*/
-@media (min-width: 1200px) {
-    .mr-xl-15 {
-      margin-right: 13% !important;
-}
-
 .navbar-custom {
     background-color: var(--main-blue);
     /*background-color: #ebf5ff;*/
     box-shadow: .2rem .2rem .1rem .1rem #ccc;
     font-size: 1.2rem;
     font-weight: bold;
-	font-family: Comic Sans MS;
+    font-family: Comic Sans MS;
 }
+
 /*Default is none; shown by firebase*/
 .navbar-nav .logged_in,
 .navbar-nav .logged_out {
@@ -27,19 +22,24 @@
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: #FFFFFF;
-    padding: 1rem;
+    padding: .85rem;
 }
 /* change the link color and add padding for height */
 .navbar-custom .navbar-nav .nav-link {
     color: #FFFFFF;
-    padding: 1rem;
+    padding: .85rem;
 }
+
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #000000;
+    /*background-color: #FFFFFF;
+    border: .1rem solid #FFFFFF;
+    border-radius: 1rem;*/
     /*background-color: #ee4400;*/ /* add background-color to active links */
 }
+
 
 
 
