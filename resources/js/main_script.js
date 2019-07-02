@@ -1,4 +1,5 @@
 window.onload = function(){
+    setupUI();
     $.get("/navBar.html", function(data){
         $("#include").html(data);
     })

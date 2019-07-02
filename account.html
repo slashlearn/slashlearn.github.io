@@ -1,39 +1,85 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-  <head>
-    <title>SlashLearn | Courses</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<head>
+  <title>SlashLearn | Courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="resources/css/courses.css">
-    <link rel="stylesheet" href="resources/css/main.css">
-  </head>
 
-  <body>
+  <link rel="stylesheet" href="/resources/css/account.css">
+  <link rel="stylesheet" href="resources/css/main.css">
+</head>
 
-    <!-- Navigation Bar Injection -->
-    <header>
-      <div id="include"></div>
-    </header>
+<body>
 
-    <!-- Account Information-->
-    <section id="course_grid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md mx-auto text-center">
-              <div id="first_name">
-                  <p></p>
+  <!-- Navigation Bar Injection -->
+  <header>
+    <div id="include"></div>
+  </header>
+
+  <section id="page_title">
+    <h3>Account Information</h3>
+  </section>
+
+  <!-- Account Information-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div id="personal_info_accordion">
+          <div class="course_card">
+            <div class="course_card_header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <h5 class="mb-0">
+                Personal Info
+                <button class="course_card_button btn-link"> <i class="fa" aria-hidden="true"></i>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+              data-parent="#personal_info_accordion">
+              <div class="course_card_body" id="personal_info_body">
+                <button class="edit_account_info_btn" onclick="edit_personal_info()"><i class='fas fa-pen'></i></button>
+                <br>
+                <div id="email_section" class="account_info_section">
+                  <h5>Email:</h5>
+                  <div id="email_display" class="account_info_value">
+                    <!--Email Injection-->
+                  </div>
+                </div>
+                <div id="first_name_section" class="account_info_section">
+                  <h5>First Name:</h5>
+                  <div id="first_name_display" class="account_info_value">
+                    <!--First Name Injection-->
+                  </div>
+                </div>
+                <div id="last_name_section" class="account_info_section">
+                  <h5>Last Name:</h5>
+                  <div id="last_name_display" class="account_info_value">
+                    <!--Last Name Injection-->
+                  </div>
+                </div>
+                <div id="bio_section" class="account_info_section">
+                  <h5>Bio:</h5>
+                  <div id="bio_display" class="account_info_value">
+                    <!--Bio Injection-->
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </div>
+  </div>
+</body>
 
 <!-- FIREBASE SET UP START-->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -65,6 +111,7 @@
 
 <!--Include auth.js-->
 <script src="resources/js/main_script.js" type="text/javascript"></script>
+<script src="resources/js/account.js" type="text/javascript"></script>
 
 <!-- FIREBASE SET UP END-->
 
