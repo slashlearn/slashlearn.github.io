@@ -11,7 +11,7 @@ body {
 
 /*main card section styles*/
 body .course_card {
-    margin: 0rem;
+    margin: 0rem 0rem 2rem 0rem;
     border: 0rem solid var(--main-blue);
     box-shadow: .1rem .1rem .2rem .2rem #ccc;
     border-radius: 1rem;
@@ -58,6 +58,24 @@ body #page_title {
 }
 
 
+/*profile picture*/
+body #profile_picture_display img {
+    padding: .5rem;
+    border: .2rem solid #ccc;
+    border-radius: .8rem;
+    width: 20rem;
+    height: 20rem;
+}
+body #profile_picture_label {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+input[type="file"] {
+    display: none;
+}
+
+
 
 /*personal info*/
 body .account_info_section {
@@ -94,3 +112,5 @@ body .cancel_btn:active {
 body .cancel_btn:hover {
     background-color: darkred;
 }
+
+

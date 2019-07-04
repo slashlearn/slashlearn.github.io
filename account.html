@@ -28,8 +28,35 @@
     <h3>Account Information</h3>
   </section>
 
-  <!-- Account Information-->
+  
   <div class="container">
+    <!-- Profile Picture-->
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div id="profile_pic_accordion">
+          <div class="course_card">
+            <div class="course_card_header" id="heading_profile_pic" data-toggle="collapse" data-target="#collapse_profile_pic"
+              aria-expanded="true" aria-controls="collapse_profile_pic">
+              <h5 class="mb-0">
+                Profile Picture
+                <button class="course_card_button btn-link"><i class="fa" aria-hidden="true"></i>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse_profile_pic" class="collapse show" aria-labelledby="heading_profile_pic"
+              data-parent="#profile_pic_accordion">
+              <div class="course_card_body" id="profile_picture_body">
+                <button class="edit_account_info_btn" onclick="edit_profile_picture()"><i class='fas fa-pen'></i></button>
+                <div id="profile_picture_display">
+                  <!-- Profile Picture Injection-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Personal Information-->
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div id="personal_info_accordion">
@@ -46,7 +73,6 @@
               data-parent="#personal_info_accordion">
               <div class="course_card_body" id="personal_info_body">
                 <button class="edit_account_info_btn" onclick="edit_personal_info()"><i class='fas fa-pen'></i></button>
-                <br>
                 <div id="email_section" class="account_info_section">
                   <h5>Email:</h5>
                   <div id="email_display" class="account_info_value">
@@ -78,7 +104,6 @@
       </div>
     </div>
   </div>
-  </div>
 </body>
 
 <!-- FIREBASE SET UP START-->
@@ -88,6 +113,7 @@
 <!-- Firebase products that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -106,6 +132,8 @@
   //references to authentication and storage
   const auth = firebase.auth();
   const database = firebase.firestore();
+  const storage = firebase.storage();
+  const storage_ref = storage.ref();
 </script>
 
 

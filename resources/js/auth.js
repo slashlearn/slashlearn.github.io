@@ -20,6 +20,11 @@ signup_form.addEventListener('submit', (e) => {
                 bio: ""
             });
         }).then(() => {
+            return firebase.auth().currentUser.updateProfile({
+                displayName: signup_form['first_name'].value + " " + signup_form['last_name'].value,
+                photoURL: '/resources/img/placeholder_profilepic.jpg'
+            });
+        }).then(() => {
             //then reset the form and redirect to courses
             document.getElementById("error_box").innerHTML = "";
             signup_form.reset();

@@ -90,3 +90,46 @@ body .sidebar_button {
     content: "\f13a";
 }
 
+/*page tab buttons*/
+body .course_page_tabs_container {
+    text-align: center;
+    margin: 1%;
+}
+body .course_page_tabs_container .course_page_tabs .btn,
+body .course_page_tabs_container .course_page_tabs .btn:active,
+body .course_page_tabs_container .course_page_tabs .btn:visited {
+    border: .1rem solid var(--main-blue-darker);
+    background-color: var(--main-blue);
+    font-size: 125%;
+    color: #FFFFFF;
+}
+
+body .course_page_tabs_container .course_page_tabs .btn:hover {
+    background-color: var(--main-blue-darker);
+}
+
+/*chatroom styles*/
+body .chatroom_container {
+}
+body .chatroom_container .chatroom_messages_container {
+    padding: 2%;
+    border: .06rem solid #ccc;
+    border-radius: .2rem;
+    background-color: #FFFFFF;
+}
+body .message_input_area {
+    overflow: hidden; 
+    padding-right: .5em;
+}
+body .send_messagebtn {
+    background-color: var(--main-blue);
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+    color: white;
+    font-size: 150%;
+    float: right;
+    border: 0rem;
+}
+body .send_messagebtn:active {
+    background-color: var(--main-blue-darker);
+}
