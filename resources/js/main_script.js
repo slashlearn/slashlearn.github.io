@@ -9,10 +9,10 @@ auth.onAuthStateChanged(user => {
      * otherwise simply display website as guest
      */
     if (user) {
-        console.log(user);
+        console.log('Main Script: ' + user);
         setupUI(user);
     } else {
-        console.log('no user logged in');
+        console.log('Main Script: no user logged in');
         setupUI();
     }
 });

@@ -109,12 +109,7 @@ body .course_page_tabs_container .course_page_tabs .btn:hover {
 }
 
 /*chatroom styles*/
-body .chatroom_container {
-}
 body .chatroom_container .chatroom_messages_container {
-    padding: 2%;
-    border: .06rem solid #ccc;
-    border-radius: .2rem;
     background-color: #FFFFFF;
 }
 body .message_input_area {
@@ -133,3 +128,24 @@ body .send_messagebtn {
 body .send_messagebtn:active {
     background-color: var(--main-blue-darker);
 }
+/* a chat item itself */
+body .message_display {
+    border: .06rem solid #ccc;
+    margin: 0rem;
+    background-color: #f1f1f1;
+    padding: 1.5%;
+}
+body .message_display img {
+    float: left;
+    max-width: 7%;
+    margin-right: 1%;
+    border-radius: 50%;
+}
+body .message_display_text {
+    display: inline-block;
+    width: 90%;
+}
+body .time-right {
+    float: right;
+    color: #aaa;
+  }
