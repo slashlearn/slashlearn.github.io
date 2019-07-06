@@ -4,6 +4,9 @@
     --main-blue-darker: #3B5998;
 }
 
+body {
+    margin-top: 7%;
+}
 .navbar-custom {
     background-color: var(--main-blue);
     /*background-color: #ebf5ff;*/
@@ -41,7 +44,9 @@
     /*background-color: #ee4400;*/ /* add background-color to active links */
 }
 
-
+body .mobile_margin {
+    margin-top: 15%;
+}
 
 
 

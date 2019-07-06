@@ -1,17 +1,15 @@
 body {
-    margin-top: 13%;
     background-color: #FAFAFA;
     /*background-color: #ebf5ff;*/  
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size:  cover;
-    height: 100%;
 }
 
 /*main card section styles*/
 body .course_card {
-    margin: 0rem;
+    margin: 2rem 0rem 0rem 0rem;
     border: 0rem solid var(--main-blue);
     box-shadow: .1rem .1rem .2rem .2rem #ccc;
     border-radius: 1rem;
@@ -109,8 +107,18 @@ body .course_page_tabs_container .course_page_tabs .btn:hover {
 }
 
 /*chatroom styles*/
+body .chatroom_container {
+    display: none;
+    position:fixed !important;
+    position:absolute;
+    top:23%;
+    bottom:0%;
+}
 body .chatroom_container .chatroom_messages_container {
+    max-height: 80%;
+    overflow-y: scroll;
     background-color: #FFFFFF;
+    border-top: .06rem solid #ccc;
 }
 body .message_input_area {
     overflow: hidden; 
@@ -132,14 +140,15 @@ body .send_messagebtn:active {
 body .message_display {
     border: .06rem solid #ccc;
     margin: 0rem;
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 1.5%;
 }
 body .message_display img {
     float: left;
     max-width: 7%;
+    max-height: 7%;
     margin-right: 1%;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 body .message_display_text {
     display: inline-block;
@@ -148,4 +157,13 @@ body .message_display_text {
 body .time-right {
     float: right;
     color: #aaa;
-  }
+}
+body .chatroom_error {
+    color: red;
+}
+
+
+/*Q and A styles*/
+body .qanda {
+    display:none;
+}

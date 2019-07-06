@@ -1,91 +1,91 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-  <head>
-    <title>SlashLearn | Courses</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<head>
+  <title>SlashLearn | Courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="resources/css/courses.css">
-    <link rel="stylesheet" href="resources/css/main.css">
-  </head>
+  <link rel="stylesheet" href="resources/css/courses.css">
+  <link rel="stylesheet" href="resources/css/main.css">
+</head>
 
-  <body>
+<!-- Navigation Bar Injection -->
+<header>
+  <div id="include"></div>
+</header>
 
-    <!-- Navigation Bar Injection -->
-    <header>
-      <div id="include"></div>
-    </header>
-
-    <!-- Course Grid -->
-    <section id="course_grid">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mx-auto text-center">
-            <a href="intro_java/course_intro.html">
-              <div class="course_title">
-                <h4>Intro to Java</h4>
+<body>
+  <div class="mobile_margin d-lg-none"></div>
+  <!-- Course Grid -->
+  <section id="course_grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mx-auto text-center">
+          <a href="intro_java/course_intro.html">
+            <div class="course_title">
+              <h4>Intro to Java</h4>
+            </div>
+            <div class="course_box">
+              <div class="course_icon">
+                <img src="resources/img/courses/sample_icon.png" class="img-fluid" alt="sample icon">
               </div>
-              <div class="course_box">
-                <div class="course_icon">
-                  <img src="resources/img/courses/sample_icon.png" class="img-fluid" alt="sample icon">
-                </div>
-                <div class="course_description">
-                  <p>
-                    This course is an introduction to software engineering in Java.
-                    It covers all the basics including variables, classes, file I/O, and recursion.
-                  </p>
-                </div>
+              <div class="course_description">
+                <p>
+                  This course is an introduction to software engineering in Java.
+                  It covers all the basics including variables, classes, file I/O, and recursion.
+                </p>
               </div>
-            </a>
-          </div>
-          <div class="col-md-4 mx-auto text-center">
-            <a href="data_structures/course_intro.html">
-              <div class="course_title">
-                <h4>Data Structures</h4>
-              </div>
-              <div class="course_box">
-                <div class="course_icon">
-                  <img src="resources/img/courses/sample_icon.png" class="img-fluid" alt="sample icon">
-                </div>
-                <div class="course_description">
-                  <p>
-                    This course expands upon your knowledge of CS with data
-                    structures and basic algorithms. You will learn about stacks, queues, trees,
-                    hash maps, graphs, sorting and more!
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mx-auto text-center">
-            <a href="interview_prep/course_intro.html">
-              <div class="course_title">
-                <h4>Interview Prep</h4>
-              </div>
-              <div class="course_box">
-                <div class="course_icon">
-                  <img src="resources/img/courses/sample_icon.png" class="img-fluid" alt="sample icon">
-                </div>
-                <div class="course_description">
-                  <p>
-                    Coming Soon !
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
+            </div>
+          </a>
         </div>
-      </div>
-    </section>
-  </body>
+        <div class="col-md-4 mx-auto text-center">
+          <a href="data_structures/course_intro.html">
+            <div class="course_title">
+              <h4>Data Structures</h4>
+            </div>
+            <div class="course_box">
+              <div class="course_icon">
+                <img src="resources/img/courses/sample_icon.png" class="img-fluid" alt="sample icon">
+              </div>
+              <div class="course_description">
+                <p>
+                  This course expands upon your knowledge of CS with data
+                  structures and basic algorithms. You will learn about stacks, queues, trees,
+                  hash maps, graphs, sorting and more!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mx-auto text-center">
+          <a href="interview_prep/course_intro.html">
+            <div class="course_title">
+              <h4>Interview Prep</h4>
+            </div>
+            <div class="course_box">
+              <div class="course_icon">
+                <img src="resources/img/courses/sample_icon.png" class="img-fluid" alt="sample icon">
+              </div>
+              <div class="course_description">
+                <p>
+                  Coming Soon !
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
 
-  <!-- FIREBASE SET UP START-->
+      </div>
+    </div>
+  </section>
+</body>
+
+<!-- FIREBASE SET UP START-->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
 

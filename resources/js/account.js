@@ -18,6 +18,7 @@ function load_user_info(current_user) {
         var last_name_id = document.getElementById("last_name_display");
         var email_id = document.getElementById("email_display");
         var bio_id = document.getElementById("bio_display");
+        var class_list_id = document.getElementById("class_list_display");
         
         var profile_picture_url = auth.currentUser.photoURL;
 
@@ -26,7 +27,7 @@ function load_user_info(current_user) {
         last_name_id.innerHTML = doc.data().last_name;
         email_id.innerHTML = current_user.email;
         bio_id.innerHTML = doc.data().bio;
-
+        class_list_id.innerHTML = doc.data().class_list;
     });
 }
 
@@ -61,6 +62,7 @@ function edit_personal_info() {
     var first_name = document.getElementById("first_name_display").innerHTML;
     var last_name = document.getElementById("last_name_display").innerHTML;
     var bio = document.getElementById("bio_display").innerHTML;
+    var class_list = document.getElementById("class_list_display").innerHTML;
     html = `
     <button class="cancel_btn" onclick="cancel_edit()">Cancel</button>
     <button class="edit_account_info_btn" onclick="save_info()">Save</button>
@@ -76,8 +78,11 @@ function edit_personal_info() {
       </div>
       <div class="form-group">
         <label for="bio">Bio:</label>
-        <!--<input type="text" class="form-control" id="bio" value="${bio}">-->
         <textarea class="form-control" id="bio" rows="3">${bio}</textarea>
+      </div>
+      <div class="form-group">
+        <label for="class_list">Class List:</label>
+        <textarea class="form-control" id="class_list" rows="3">${class_list}</textarea>
       </div>
     </form>
     `
@@ -142,6 +147,7 @@ function save_info() {
         first_name: edit_personal_info_form['first_name'].value,
         last_name: edit_personal_info_form['last_name'].value,
         bio: edit_personal_info_form['bio'].value,
+        class_list: edit_personal_info_form['class_list'].value
     }).then(() => {
         return this_user.updateProfile({
             displayName: edit_personal_info_form['first_name'].value + " " + edit_personal_info_form['last_name'].value

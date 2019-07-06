@@ -17,26 +17,27 @@
   <link rel="stylesheet" href="resources/css/main.css">
 </head>
 
+
+
+<!-- Navigation Bar Injection -->
+<header>
+  <div id="include"></div>
+</header>
+
 <body>
-
-  <!-- Navigation Bar Injection -->
-  <header>
-    <div id="include"></div>
-  </header>
-
+  <div class="mobile_margin d-lg-none"></div>
   <section id="page_title">
     <h3>Account Information</h3>
   </section>
 
-  
   <div class="container">
     <!-- Profile Picture-->
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div id="profile_pic_accordion">
           <div class="course_card">
-            <div class="course_card_header" id="heading_profile_pic" data-toggle="collapse" data-target="#collapse_profile_pic"
-              aria-expanded="true" aria-controls="collapse_profile_pic">
+            <div class="course_card_header" id="heading_profile_pic" data-toggle="collapse"
+              data-target="#collapse_profile_pic" aria-expanded="true" aria-controls="collapse_profile_pic">
               <h5 class="mb-0">
                 Profile Picture
                 <button class="course_card_button btn-link"><i class="fa" aria-hidden="true"></i>
@@ -46,7 +47,8 @@
             <div id="collapse_profile_pic" class="collapse show" aria-labelledby="heading_profile_pic"
               data-parent="#profile_pic_accordion">
               <div class="course_card_body" id="profile_picture_body">
-                <button class="edit_account_info_btn" onclick="edit_profile_picture()"><i class='fas fa-pen'></i></button>
+                <button class="edit_account_info_btn" onclick="edit_profile_picture()"><i
+                    class='fas fa-pen'></i></button>
                 <div id="profile_picture_display">
                   <!-- Profile Picture Injection-->
                 </div>
@@ -97,6 +99,12 @@
                     <!--Bio Injection-->
                   </div>
                 </div>
+                <div id="class_list_section" class="account_info_section">
+                    <h5>Classes I'm taking:</h5>
+                    <div id="class_list_display" class="account_info_value">
+                      <!--class list Injection-->
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
