@@ -20,18 +20,18 @@ body #welcome {
 /*sign up button*/
 body #sign_up, #sign_up:visited, #sign_up:active {
     outline: none;
-    color: var(--main-blue);
-    box-shadow: .2rem .2rem .3rem .3rem #ccc;
-    background-color: #FFFFFF;
-    padding: 1% 2% 1% 2%;
-    font-size: 150%;
+    color: white;
+    box-shadow: .1rem .1rem .15rem .15rem #ccc;
+    background-color: var(--main-blue);
+    padding: .7% 1.4% .7% 1.4%;
+    font-size: 110%;
     font-family: Trebuchet MS;
     border: .2rem solid var(--main-blue);
     border-radius: 1rem;
     margin-top: 2rem;
 }
 body #sign_up:hover {
-    box-shadow: .0rem 0rem .2rem .2rem var(--main-blue);
+    /*box-shadow: .0rem 0rem .1rem .2rem var(--main-blue);*/
 }
 
 h1, h2, h3 {

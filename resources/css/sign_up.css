@@ -32,7 +32,7 @@ body #create_account, #create_account:visited, #create_account:active {
     box-shadow: .2rem .2rem .3rem .3rem #ccc;
     background-color: #FFFFFF;
     padding: 2%;
-    font-size: 110%;
+    font-size: 90%;
     font-family: Trebuchet MS;
     border: .2rem solid var(--main-blue);
     border-radius: 1rem;

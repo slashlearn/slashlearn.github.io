@@ -8,6 +8,9 @@ body {
 }
 
 /*main card section styles*/
+body .course_material_section {
+    margin-left: 2rem;
+}
 body .course_card {
     margin: 2rem 0rem 0rem 0rem;
     border: 0rem solid var(--main-blue);
@@ -24,6 +27,7 @@ body .course_card_body {
     padding: 2%;
     background-color: #FFFFFF;
     border-radius: 1rem;
+    font-size: 110%;
 
 }
 body .course_card_button:active,
@@ -52,22 +56,24 @@ body .course_card_button:hover{
     margin: 1rem 0rem 0rem .3rem;
 }
 .sidebar .sidebar_item {
+    padding: .3rem;
     color: var(--main-blue);
     list-style-type: square;
     text-decoration: none;
-    padding: .2rem;
 }
 .sidebar .sidebar_item:hover {
-    padding: .3rem;
     box-shadow: .1rem .1rem .2rem .2rem #ccc;
     border-radius: 1rem;
 }
 li span {
     position: relative;
-    left: -.8rem;
+    left: -.6rem;
 }
-.sidebar .sidebar_item a:hover {
+.sidebar a {
+    display: block;
     text-decoration: none;
+}
+.sidebar a:hover {
     color: #000000;
 }
 body .sidebar_button:active,
@@ -108,14 +114,11 @@ body .course_page_tabs_container .course_page_tabs .btn:hover {
 
 /*chatroom styles*/
 body .chatroom_container {
+    height: 80vh;
     display: none;
-    position:fixed !important;
-    position:absolute;
-    top:23%;
-    bottom:0%;
 }
 body .chatroom_container .chatroom_messages_container {
-    max-height: 80%;
+    max-height: 75%;
     overflow-y: scroll;
     background-color: #FFFFFF;
     border-top: .06rem solid #ccc;
@@ -152,10 +155,9 @@ body .message_display img {
 }
 body .message_display_text {
     display: inline-block;
-    width: 90%;
+    width: 80%;
 }
 body .time-right {
-    float: right;
     color: #aaa;
 }
 body .chatroom_error {

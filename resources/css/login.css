@@ -32,7 +32,7 @@ body #login, #login:visited, #login:active {
     box-shadow: .2rem .2rem .3rem .3rem #ccc;
     background-color: #FFFFFF;
     padding: 2% 5% 2% 5%;
-    font-size: 125%;
+    font-size: 100%;
     font-family: Trebuchet MS;
     border: .2rem solid var(--main-blue);
     border-radius: 1rem;

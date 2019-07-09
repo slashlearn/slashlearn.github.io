@@ -18,6 +18,7 @@
 <!-- Navigation Bar Injection -->
 <header>
   <div id="include"></div>
+  
 </header>
 
 <body>
@@ -36,30 +37,27 @@
           <div id="sidebar_injection">
           </div>
         </div>
-        <div class="col-lg mr-0">
+        <div class="col-lg mr-0 course_material_section">
           <div id="accordion1">
             <div class="course_card">
               <div class="course_card_header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                <h5 class="mb-0">
-                  Test Title 1
+                <h4 class="mb-0">
+                  Welcome!
                   <button class="course_card_button btn-link"> <i class="fa" aria-hidden="true"></i>
                   </button>
-                </h5>
+                </h4>
               </div>
 
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1">
                 <div class="course_card_body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                  wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                  eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                  ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
-                  denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <p>
+                    Welcome to this introduction to computer science course. This course is meant
+                    teach the fundamentals of computer science and programming using the language of
+                    Java. If you are taking AP Computer Science, an introductory programming class
+                    in college, or you just want to get started with coding this is a great resource
+                    for you. You do not need to have any prior experience with coding to follow this course.
+                  </p>
                 </div>
               </div>
             </div>
@@ -67,76 +65,119 @@
 
           <br>
 
-          <div id="accordion2">
+          <div id="course_description_accordion">
             <div class="course_card">
-              <div class="course_card_header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
-                aria-expanded="true" aria-controls="collapsTwo">
-                <h5 class="mb-0">
-                  Test Title 2
-                  <button class="course_card_button btn-link" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="fa" aria-hidden="true"></i>
+              <div class="course_card_header" id="heading_course_description" data-toggle="collapse"
+                data-target="#collapse_course_description">
+                <h4 class="mb-0">
+                  What You Will Learn
+                  <button class="course_card_button btn-link" data-toggle="collapse"
+                    data-target="#collapse_course_description">
+                    <i class="fa"></i>
                   </button>
-                </h5>
+                </h4>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+              <div id="collapse_course_description" class="collapse show" data-parent="#course_description_accordion">
                 <div class="course_card_body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                  wolf
-                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                  eiusmod.
-                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                  ea
-                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
-                  denim
-                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <p>
+                    This course covers all the material that you would learn in the first semester of computer science
+                    class in college. We will first start with syntax, variables, and objects. We will then move into
+                    conditional statements, loops, and classes. Finally, we will end with error handling, sorting,
+                    searching, and recursion.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+
+          <br>
+
+          <div id="advice_accordion">
+            <div class="course_card">
+              <div class="course_card_header" id="heading_advice" data-toggle="collapse" data-target="#collapse_advice">
+                <h4 class="mb-0">
+                  Advice for this Course
+                  <button class="course_card_button btn-link" data-toggle="collapse" data-target="#collapse_advice">
+                    <i class="fa"></i>
+                  </button>
+                </h4>
+              </div>
+              <div id="collapse_advice" class="collapse show" data-parent="#advice_accordion">
+                <div class="course_card_body">
+                  <ul>
+                    <li>
+                      <strong>Don’t be discouraged:</strong> computer science is hard, and I struggled a
+                      lot when I first started learning. If you find yourself struggling,
+                      don’t think for one second that you should quit.
+                      Everyone can learn anything!
+                    </li>
+                    <li>
+                      <strong>Learn by doing:</strong> this is especially true in computer science.
+                      Reading and understanding the theory is only one part of the learning.
+                      I would highly recommend applying your knowledge by writing code.
+                      Whether it is through the course exercises or a personal project the
+                      act of writing code will cement the concepts and build up your
+                      problem-solving skills.
+                    </li>
+                    <li>
+                      <strong>Make use of the chatroom:</strong> if you are stuck with something feel free
+                      to use the chatroom to ask someone for help. I will be on as much
+                      as possible to help.
+                    </li>
+                    <li>
+                      <strong>Help others:</strong> Explaining a concept to someone who is asking for help is
+                      a great way to make sure you really know the material. If you can teach it, you know it!
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
         </div>
+
         <div class="col-xl-2">
           <!--Empty spacer-->
         </div>
       </div>
     </div>
   </div>
+  <div class="container" id="chat_injection">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="chatroom_container" id="intro_java_chatroom_container">
+          <h3>Intro Java Chatroom: </h3>
+          <div class="chatroom_messages_container" id="intro_java_chatroom_messages_container">
+          </div>
 
-  <div class="row">
-    <div class="col-lg-6 mx-auto">
-      <div class="chatroom_container" id="intro_java_chatroom_container">
-        <h3>Intro Java Chatroom: </h3>
-        <div class="chatroom_messages_container" id="intro_java_chatroom_messages_container">
-        </div>
+          <div class="message_input_container">
+            <button type="button" class="send_messagebtn" id="intro_java_send_messagebtn"
+              onclick="send_message()">Send</button>
+            <form id="intro_java_message_input_form" class="message_input_form">
+              <div class="form-group message_input_area">
+                <textarea class="form-control chatroom_message_input" id="intro_java_chatroom_message_input" rows="2"
+                  placeholder="Ask for guidance, help someone out, send a message..."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="chatroom_error">
 
-        <div class="message_input_container">
-          <button type="button" class="send_messagebtn" id="intro_java_send_messagebtn"
-            onclick="send_message()">Send</button>
-          <form id="intro_java_message_input_form" class="message_input_form">
-            <div class="form-group message_input_area">
-              <!--<input type="text" class="form-control" id="bio" value="${bio}">-->
-              <textarea class="form-control chatroom_message_input" id="intro_java_chatroom_message_input" rows="2"
-                placeholder="Ask for guidance, help someone out, send a message..."></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="chatroom_error">
-          
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-
-  <div class="row">
-    <div class="col-lg-6 mx-auto">
-      <div class="qanda">
-        <h1>Coming Soon!</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="qanda">
+          <h1>Coming Soon!</h1>
+        </div>
       </div>
     </div>
   </div>
-
 </body>
 
 <!-- FIREBASE SET UP START-->

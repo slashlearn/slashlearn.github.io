@@ -44,11 +44,11 @@ function convert_message(sender_name, profile_pic_url, text, timestamp) {
     timestamp = format_timestamp(timestamp);
     html = `
     <div class="message_display">
-       <img src=${profile_pic_url}>
-              <div class="message_display_text">
-                <p><strong>${sender_name}</strong><span class="time-right">${timestamp}</span><br>${text}</p>
-              </div>
-            </div>
+      <img src=${profile_pic_url}>
+        <div class="message_display_text">
+          <p><strong>${sender_name}</strong><span class="time-right"> | ${timestamp}</span><br>${text}</p>
+        </div>
+    </div>
     `
     return html;
 }
