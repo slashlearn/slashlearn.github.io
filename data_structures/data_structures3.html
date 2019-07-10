@@ -53,48 +53,6 @@
               </div>
               <div id="collapse_ds_array" class="collapse show" data-parent="#ds_array_accordion">
                 <div class="course_card_body">
-
-                  <div id="carousel_ds_array" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel_ds_array" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="1"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="2"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="3"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="4"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="5"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="6"></li>
-                      <li data-target="#carousel_ds_array" data-slide-to="7"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/data_structures/resources/img/l1/array1.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array2.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array3.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array4.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array5.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array6.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array7.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array8.png">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel_ds_array" role="button" data-slide="prev"></a>
-                    <a class="carousel-control-next" href="#carousel_ds_array" role="button" data-slide="next"></a>
-                  </div>
-
                 </div>
               </div>
             </div>
@@ -115,47 +73,6 @@
               </div>
               <div id="collapse_iterator" class="collapse show" data-parent="#iterator_accordion">
                 <div class="course_card_body">
-
-                  <div id="carousel_ds_array_iterator" class="carousel slide" data-ride="carousel"
-                    data-interval="false">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="1"></li>
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="2"></li>
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="3"></li>
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="4"></li>
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="5"></li>
-                      <li data-target="#carousel_ds_array_iterator" data-slide-to="6"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="/data_structures/resources/img/l1/array_iterator1.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array_iterator2.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array_iterator3.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array_iterator4.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array_iterator5.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array_iterator6.png">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="/data_structures/resources/img/l1/array_iterator7.png">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel_ds_array_iterator" role="button"
-                      data-slide="prev"></a>
-                    <a class="carousel-control-next" href="#carousel_ds_array_iterator" role="button"
-                      data-slide="next"></a>
-                  </div>
-
                 </div>
               </div>
             </div>
@@ -177,40 +94,6 @@
               </div>
               <div id="collapse_cs_Array-java" class="collapse" data-parent="#cs_Array-java_accordion">
                 <div class="course_card_body">
-                    <pre><code class="language-java">import java.util.Iterator;
-/**
- * Interface for our own Array Data Structure
- * @param <T> The Base type for an array.
- */
-public interface Array<T> {
-	
-	/**
-	 * The maximum size of the array.
-	 * @return the length of the array.
-	 */
-	int length();
-	
-	/**
-	 * Gets the value of type T at a certain index.
-	 * @param i the index of the value.
-	 * @return the value at index i
-	 */
-	T get(int i);
-	
-	/**
-	 * Sets the value at position i to t.
-	 * @param i index of data to be set.
-	 * @param t what the value at i will be set to.
-	 */
-	void set(int i, T t);
-
-	/**
-	 * Creates an iterable object for Array.
-	 * @return the iterable object.
-	 */
-	Iterator<T> iterator();
-}
-                    </code></pre>
                 </div>
               </div>
             </div>
@@ -232,75 +115,6 @@ public interface Array<T> {
               </div>
               <div id="collapse_cs_BasicArray-java" class="collapse" data-parent="#cs_BasicArray-java_accordion">
                 <div class="course_card_body">
-                    <pre><code class="language-java">import java.util.Iterator;
-public class BasicArray<T> implements Array<T>, Iterable<T> {
-
-    private class BasicArrayIterator implements Iterator<T> {
-        
-        int current = 0; //current position for iterator
-
-        @Override
-        public T next() {
-            T t = BasicArray.this.data[this.current];
-            this.current += 1;
-            return t;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return this.current < BasicArray.this.data.length;
-        }
-
-        @Override
-        public void remove() {
-            throw new UnsupportedOperationException();
-        }
-    }
-    
-    private T[] data;
-	
-	/**
-	 * Creates and returns new array of i length that holds 
-	 * values of the type T. 
-	 * Initial value of array is t.
-	 * @param t the initial value for all positions in the array.
-	 * @param length the maximum capacity of our array.
-	 */
-	public BasicArray(T t, int length) {
-		data = (T[]) new Object[length];
-		for (int i = 0; i < length; i++) {
-			data[i] = t;
-		}
-	}
-	
-    @Override
-    public Iterator<T> iterator() {
-        return new BasicArrayIterator();
-    }
-    
-	public int length() {
-		return data.length;
-	}
-	
-	public void set(int i, T t) {
-		if (checkValidIndex(i)) {
-			data[i] = t;
-		} else {
-			throw new ArrayIndexOutOfBoundsException();
-		}
-	}
-	
-	public T get(int i) {
-		if (!checkValidIndex(i))
-			throw new ArrayIndexOutOfBoundsException();
-		return data[i];
-	}
-	
-	private boolean checkValidIndex(int i) {
-		return (i >= 0) && (i < data.length);
-	}
-}
-                      </code></pre>
                 </div>
               </div>
             </div>
@@ -322,34 +136,10 @@ public class BasicArray<T> implements Array<T>, Iterable<T> {
               </div>
               <div id="collapse_cs_Tester-java" class="collapse" data-parent="#cs_Tester-java_accordion">
                 <div class="course_card_body">
-                    <pre><code class="language-java">import java.util.Iterator;
-public class Tester {
-
-	public static void main(String[] args) {
-		BasicArray<Integer> arr = new BasicArray<Integer>(0, 5);
-		
-		for (int i = 0; i < arr.length(); i++) {
-			arr.set(i, i * 10);
-		}
-
-		for (Integer i : arr) {
-			System.out.print(i + ", ");
-		}
-		System.out.println();
-		
-		Iterator<Integer> it = arr.iterator();
-		while (it.hasNext()) {
-			Integer i = it.next();
-			System.out.print(i + ", ");
-		}
-	}
-}
-                    </code></pre>
                 </div>
               </div>
             </div>
           </div>
-          <br><br><br>
 
 
         </div>

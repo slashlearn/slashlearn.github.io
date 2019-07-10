@@ -65,10 +65,6 @@ body .course_card_button:hover{
     box-shadow: .1rem .1rem .2rem .2rem #ccc;
     border-radius: 1rem;
 }
-li span {
-    position: relative;
-    left: -.6rem;
-}
 .sidebar a {
     display: block;
     text-decoration: none;
@@ -168,4 +164,11 @@ body .chatroom_error {
 /*Q and A styles*/
 body .qanda {
     display:none;
+}
+
+/*course carousel styles */
+.carousel-inner .carousel-item img {
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
 }
