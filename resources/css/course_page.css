@@ -30,6 +30,12 @@ body .course_card_body {
     font-size: 110%;
 
 }
+/*exercise images */
+body .course_card_body .exercise_img img {
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+}
 body .course_card_button:active,
 body .course_card_button {
     outline: none;
@@ -172,3 +178,4 @@ body .qanda {
     width: 100%;
     border-radius: .5rem;
 }
+
