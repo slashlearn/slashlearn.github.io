@@ -20,6 +20,8 @@ function load_qanda() {
     document.body.style.overflowY = "scroll";
 }
 
+//function for exercise
+
 
 function save_message(messageText, chatroom) {
     var date = new Date();

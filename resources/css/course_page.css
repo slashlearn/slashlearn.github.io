@@ -23,12 +23,17 @@ body .course_card_header {
     background-color: #EEEEEE;
     border-radius: 1rem;
 }
-body .course_card_body {
+body .course_card_body_words {
     padding: 2%;
     background-color: #FFFFFF;
     border-radius: 1rem;
     font-size: 110%;
+}
 
+body .course_card_body {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    font-size: 110%;
 }
 /*exercise images */
 body .course_card_body .exercise_img img {
@@ -176,6 +181,21 @@ body .qanda {
 .carousel-inner .carousel-item img {
     display: block;
     width: 100%;
+    border-radius: .5rem;
+}
+
+
+
+/* Styles for content */
+.left_50 {
+    display: block;
+    width: 50%;
+    border-radius: .5rem;
+}
+.right_50 {
+    float: right;
+    display: block;
+    width: 50%;
     border-radius: .5rem;
 }
 
