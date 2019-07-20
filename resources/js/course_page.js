@@ -21,6 +21,22 @@ function load_qanda() {
 }
 
 //function for exercise
+function exercise_answer(answer_code, radio_name) {
+    radio_group = document.getElementsByName(radio_name);
+    result_id = document.getElementById(radio_name);
+    var answer_choice;
+    for (var i = 0; i < radio_group.length; i++) {
+        if (radio_group[i].checked) {
+            answer_choice = radio_group[i].value;
+            break;
+        }
+    }
+    if (answer_choice == answer_code) {
+        result_id.innerHTML = `<p>Correct, Nice Job! &#9989;</p>`;
+    } else {
+        result_id.innerHTML = `<p>Try Again! &#10060;</p>`;
+    }
+}
 
 
 function save_message(messageText, chatroom) {

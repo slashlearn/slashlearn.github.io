@@ -2,6 +2,7 @@
 /*    --main-blue: #00a5ff;*/
     --main-blue: #0083FF;
     --main-blue-darker: #3B5998;
+    --main-orange: #FF7C00;
 }
 
 body {
@@ -47,6 +48,7 @@ body {
 body .mobile_margin {
     margin-top: 15%;
 }
+
 
 
 
