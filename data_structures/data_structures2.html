@@ -121,7 +121,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse_amortized" class="collapse show" data-parent="#amortized_accordion">
+              <div id="collapse_amortized" class="collapse" data-parent="#amortized_accordion">
                 <div class="course_card_body">
 
                   <div id="carousel_amortized" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -153,8 +153,6 @@
 
           <br>
 
-
-
           <div id="complexity_exercise_accordion">
             <div class="course_card">
               <div class="course_card_header" id="heading_complexity_exercise" data-toggle="collapse"
@@ -167,7 +165,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse_complexity_exercise" class="collapse show" data-parent="#complexity_exercise_accordion">
+              <div id="collapse_complexity_exercise" class="collapse" data-parent="#complexity_exercise_accordion">
                 <div class="course_card_body">
 
                   <div id="carousel_complexity_examples" class="carousel slide" data-ride="carousel"
@@ -246,7 +244,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse_complexity_example" class="collapse show" data-parent="#complexity_example_accordion">
+              <div id="collapse_complexity_example" class="collapse" data-parent="#complexity_example_accordion">
                 <div class="course_card_body_blue">
 
                   <div id="carousel_complexity_exercise" class="carousel slide" data-ride="carousel"
@@ -271,19 +269,19 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">One
+                            <label class="answer_choice_rb">O(A * B)
                               <input type="radio" name="complexity_exer1" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Two
+                            <label class="answer_choice_rb">O(A * &radic;<span style="text-decoration: overline">B</span>)
                               <input type="radio" name="complexity_exer1" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Three
+                            <label class="answer_choice_rb">O(A * log(B))
                               <input type="radio" name="complexity_exer1" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Four
+                            <label class="answer_choice_rb">O(A * B/2)
                               <input type="radio" name="complexity_exer1" value="4">
                               <span class="checkmark"></span>
                             </label>
@@ -304,25 +302,25 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">One
+                            <label class="answer_choice_rb">O(n)
                               <input type="radio" name="complexity_exer2" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Two
+                            <label class="answer_choice_rb">O(n!)
                               <input type="radio" name="complexity_exer2" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Three
+                            <label class="answer_choice_rb">O(n * n!)
                               <input type="radio" name="complexity_exer2" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Four
+                            <label class="answer_choice_rb">O(1)
                               <input type="radio" name="complexity_exer2" value="4">
                               <span class="checkmark"></span>
                             </label>
                           </div>
                           <button type="button" class="check_answer_btn"
-                            onclick="exercise_answer(3, 'complexity_exer2')">Check Answer</button>
+                            onclick="exercise_answer(1, 'complexity_exer2')">Check Answer</button>
                           <div class="exercise_result" id="complexity_exer2">
                             <!-- Answer Result Injection-->
                           </div>
@@ -337,25 +335,25 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">One
+                            <label class="answer_choice_rb">O(a + b)
                               <input type="radio" name="complexity_exer3" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Two
+                            <label class="answer_choice_rb">O(a)
                               <input type="radio" name="complexity_exer3" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Three
+                            <label class="answer_choice_rb">O(b)
                               <input type="radio" name="complexity_exer3" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Four
+                            <label class="answer_choice_rb">O(a/b)
                               <input type="radio" name="complexity_exer3" value="4">
                               <span class="checkmark"></span>
                             </label>
                           </div>
                           <button type="button" class="check_answer_btn"
-                            onclick="exercise_answer(3, 'complexity_exer3')">Check Answer</button>
+                            onclick="exercise_answer(4, 'complexity_exer3')">Check Answer</button>
                           <div class="exercise_result" id="complexity_exer3">
                             <!-- Answer Result Injection-->
                           </div>
@@ -370,25 +368,25 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">One
+                            <label class="answer_choice_rb">O(n<sup>2</sup>)
                               <input type="radio" name="complexity_exer4" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Two
+                            <label class="answer_choice_rb">O(2<sup>n</sup>)
                               <input type="radio" name="complexity_exer4" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Three
+                            <label class="answer_choice_rb">O(n * 2<sup>n</sup>)
                               <input type="radio" name="complexity_exer4" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Four
+                            <label class="answer_choice_rb">O(n * log(n))
                               <input type="radio" name="complexity_exer4" value="4">
                               <span class="checkmark"></span>
                             </label>
                           </div>
                           <button type="button" class="check_answer_btn"
-                            onclick="exercise_answer(3, 'complexity_exer4')">Check Answer</button>
+                            onclick="exercise_answer(2, 'complexity_exer4')">Check Answer</button>
                           <div class="exercise_result" id="complexity_exer4">
                             <!-- Answer Result Injection-->
                           </div>
@@ -403,25 +401,25 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">One
+                            <label class="answer_choice_rb">O(n)
                               <input type="radio" name="complexity_exer5" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Two
+                            <label class="answer_choice_rb">log(n)
                               <input type="radio" name="complexity_exer5" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Three
+                            <label class="answer_choice_rb">O(&radic;<span style="text-decoration: overline">n</span>)
                               <input type="radio" name="complexity_exer5" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">Four
+                            <label class="answer_choice_rb">O(n<sup>2</sup>)
                               <input type="radio" name="complexity_exer5" value="4">
                               <span class="checkmark"></span>
                             </label>
                           </div>
                           <button type="button" class="check_answer_btn"
-                            onclick="exercise_answer(3, 'complexity_exer5')">Check Answer</button>
+                            onclick="exercise_answer(2, 'complexity_exer5')">Check Answer</button>
                           <div class="exercise_result" id="complexity_exer5">
                             <!-- Answer Result Injection-->
                           </div>
@@ -460,7 +458,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse_space_complexity" class="collapse show" data-parent="#space_complexity_accordion">
+              <div id="collapse_space_complexity" class="collapse" data-parent="#space_complexity_accordion">
                 <div class="course_card_body">
 
                   <div id="carousel_space_complexity" class="carousel slide" data-ride="carousel" data-interval="false">

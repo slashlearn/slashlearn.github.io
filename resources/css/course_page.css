@@ -283,6 +283,9 @@ body .qanda {
     border-radius: .5rem;
     margin: 1rem 3rem 1rem 3rem;
 }
+.check_answer_btn:hover {
+    background-color: var(--main-orange-darker)
+}
 /* exercise result */
 .exercise_result {
     color: white;
