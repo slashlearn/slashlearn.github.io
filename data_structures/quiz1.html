@@ -1,0 +1,613 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>SlashLearn</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="/resources/css/course_page.css">
+  <link rel="stylesheet" href="/resources/css/main.css">
+  <link rel="stylesheet" href="/resources/css/prism.css">
+</head>
+
+<!-- Navigation Bar Injection -->
+<header>
+  <div id="include"></div>
+
+</header>
+
+<body>
+  <div class="mobile_margin d-lg-none"></div>
+  <div class="container-fluid">
+    <div class="course_page_tabs_container">
+      <div class="btn-group course_page_tabs" role="group" aria-label="Basic example">
+        <button type="button" class="btn" onclick="load_course_material()">Course</button>
+        <button type="button" class="btn" onclick="load_chatroom(); data_structures_load_messages()">Chatroom</button>
+        <button type="button" class="btn" onclick="load_qanda()">Q & A</button>
+      </div>
+    </div>
+    <div class="course_material">
+      <div class="row">
+        <div class="col-lg-2">
+          <div id="sidebar_injection">
+          </div>
+        </div>
+        <div class="col-lg mr-0 course_material_section">
+
+          <div id="ds_concept_exercise_accordion">
+            <div class="course_card">
+              <div class="course_card_header" id="heading_ds_concept_exercise" data-toggle="collapse"
+                data-target="#collapse_ds_concept_exercise">
+                <h5 class="mb-0">
+                  Data Structure Concept Questions
+                  <button class="course_card_button btn-link" data-toggle="collapse"
+                    data-target="#collapse_ds_concept_exercise">
+                    <i class="fa"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse_ds_concept_exercise" class="collapse" data-parent="#ds_concept_exercise_accordion">
+                <div class="course_card_body_blue">
+
+                  <div id="carousel_ds_concept_exercise" class="carousel slide" data-ride="carousel"
+                    data-interval="false">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="1"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="2"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="3"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="4"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="5"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="6"></li>
+                      <li data-target="#carousel_ds_concept_exercise" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Array
+                              <input type="radio" name="ds_concept_exer1" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Stack
+                              <input type="radio" name="ds_concept_exer1" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Queue
+                              <input type="radio" name="ds_concept_exer1" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Doubly Linked List
+                              <input type="radio" name="ds_concept_exer1" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(2, 'ds_concept_exer1')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer1">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise1.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Array
+                              <input type="radio" name="ds_concept_exer2" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Stack
+                              <input type="radio" name="ds_concept_exer2" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Queue
+                              <input type="radio" name="ds_concept_exer2" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Deque
+                              <input type="radio" name="ds_concept_exer2" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(3, 'ds_concept_exer2')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer2">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise2.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">A: Circular Array
+                              <input type="radio" name="ds_concept_exer3" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">B: Single Linked List with no Tail Reference
+                              <input type="radio" name="ds_concept_exer3" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">C: Single Linked List with Tail Reference
+                              <input type="radio" name="ds_concept_exer3" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A & C
+                              <input type="radio" name="ds_concept_exer3" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A, B, & C
+                              <input type="radio" name="ds_concept_exer3" value="5">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(4, 'ds_concept_exer3')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer3">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise3.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">A: Array
+                              <input type="radio" name="ds_concept_exer4" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">B: Single Linked List with no Tail Reference
+                              <input type="radio" name="ds_concept_exer4" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">C: Single Linked List with Tail Reference
+                              <input type="radio" name="ds_concept_exer4" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A & C
+                              <input type="radio" name="ds_concept_exer4" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A, B, & C
+                              <input type="radio" name="ds_concept_exer4" value="5">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(5, 'ds_concept_exer4')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer4">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise4.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Array
+                              <input type="radio" name="ds_concept_exer5" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Stack
+                              <input type="radio" name="ds_concept_exer5" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Queue
+                              <input type="radio" name="ds_concept_exer5" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Deque
+                              <input type="radio" name="ds_concept_exer5" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(1, 'ds_concept_exer5')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer5">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise5.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Singly Linked List with no tail
+                              <input type="radio" name="ds_concept_exer6" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Singly Linked List with tail
+                              <input type="radio" name="ds_concept_exer6" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Doubly Linked List
+                              <input type="radio" name="ds_concept_exer6" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">B & C
+                              <input type="radio" name="ds_concept_exer6" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A, B, & C
+                              <input type="radio" name="ds_concept_exer6" value="5">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(3, 'ds_concept_exer6')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer6">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise6.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Singly Linked List with no tail
+                              <input type="radio" name="ds_concept_exer7" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Singly Linked List with tail
+                              <input type="radio" name="ds_concept_exer7" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Doubly Linked List
+                              <input type="radio" name="ds_concept_exer7" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">B & C
+                              <input type="radio" name="ds_concept_exer7" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A, B, & C
+                              <input type="radio" name="ds_concept_exer7" value="5">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(4, 'ds_concept_exer7')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer7">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise7.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Array
+                              <input type="radio" name="ds_concept_exer8" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Doubly Linked List
+                              <input type="radio" name="ds_concept_exer8" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Stack implemented with Array
+                              <input type="radio" name="ds_concept_exer8" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Deque implemented with Array
+                              <input type="radio" name="ds_concept_exer8" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(1, 'ds_concept_exer8')">Check Answer</button>
+                          <div class="exercise_result" id="ds_concept_exer8">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/ds_concept_exercise8.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel_ds_concept_exercise" role="button"
+                      data-slide="prev"></a>
+                    <a class="carousel-control-next" href="#carousel_ds_concept_exercise" role="button"
+                      data-slide="next"></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="time_complexity_exercise_accordion">
+            <div class="course_card">
+              <div class="course_card_header" id="heading_time_complexity_exercise" data-toggle="collapse"
+                data-target="#collapse_time_complexity_exercise">
+                <h5 class="mb-0">
+                  Time & Space Complexity Questions
+                  <button class="course_card_button btn-link" data-toggle="collapse"
+                    data-target="#collapse_time_complexity_exercise">
+                    <i class="fa"></i>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapse_time_complexity_exercise" class="collapse"
+                data-parent="#time_complexity_exercise_accordion">
+                <div class="course_card_body_blue">
+
+                  <div id="carousel_time_complexity_exercise" class="carousel slide" data-ride="carousel"
+                    data-interval="false">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="1"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="2"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="3"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="4"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="5"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="6"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="7"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="8"></li>
+                      <li data-target="#carousel_time_complexity_exercise" data-slide-to="9"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">True
+                              <input type="radio" name="time_complexity_exer1" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">False
+                              <input type="radio" name="time_complexity_exer1" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(2, 'time_complexity_exer1')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer1">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise1.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">O(nlog(n) + 2<sup>A</sup>)
+                              <input type="radio" name="time_complexity_exer2" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(nlog(n<sup>2</sup>) + 2<sup>A</sup>)
+                              <input type="radio" name="time_complexity_exer2" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(n * 2<sup>A</sup>)
+                              <input type="radio" name="time_complexity_exer2" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(nlog(n) + n + 2<sup>A</sup>)
+                              <input type="radio" name="time_complexity_exer2" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(1, 'time_complexity_exer2')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer2">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise2.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">O(5A + Nlog(N))
+                              <input type="radio" name="time_complexity_exer3" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(5AN + Nlog(N))
+                              <input type="radio" name="time_complexity_exer3" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(ANlog(N))
+                              <input type="radio" name="time_complexity_exer3" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(A + Nlog(N))
+                              <input type="radio" name="time_complexity_exer3" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(4, 'time_complexity_exer3')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer3">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise3.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">O(1)
+                              <input type="radio" name="time_complexity_exer4" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(N!)
+                              <input type="radio" name="time_complexity_exer4" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(N<sup>2</sup>)
+                              <input type="radio" name="time_complexity_exer4" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(2<sup>N</sup>)
+                              <input type="radio" name="time_complexity_exer4" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(N<sup>N</sup>)
+                              <input type="radio" name="time_complexity_exer4" value="5">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(5, 'time_complexity_exer4')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer4">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise4.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">O(N<sup>2</sup>log(N))
+                              <input type="radio" name="time_complexity_exer5" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(N!)
+                              <input type="radio" name="time_complexity_exer5" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(Nlog(N))
+                              <input type="radio" name="time_complexity_exer5" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O((N/2) * log(N) + N)
+                              <input type="radio" name="time_complexity_exer5" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(3, 'time_complexity_exer5')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer5">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise5.png">
+                        </div>
+                      </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel_time_complexity_exercise" role="button"
+                      data-slide="prev"></a>
+                    <a class="carousel-control-next" href="#carousel_time_complexity_exercise" role="button"
+                      data-slide="next"></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+        </div>
+
+        <div class="col-xl-2">
+          <!--Empty spacer-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="chat_injection">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="chatroom_container" id="data_structures_chatroom_container">
+          <h3>Data Structures Chatroom: </h3>
+          <div class="chatroom_messages_container" id="data_structures_chatroom_messages_container">
+          </div>
+
+          <div class="message_input_container">
+            <button type="button" class="send_messagebtn" id="data_structures_send_messagebtn"
+              onclick="send_message()">Send</button>
+            <form id="data_structures_message_input_form" class="message_input_form">
+              <div class="form-group message_input_area">
+                <textarea class="form-control chatroom_message_input" id="data_structures_chatroom_message_input"
+                  rows="2" placeholder="Ask for guidance, help someone out, send a message..."></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="chatroom_error">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="qanda">
+          <h1>Coming Soon!</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- FIREBASE SET UP START-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+<!-- Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC2LtwaQuVFOcIGtuXjiuz9qtqTT20qgQ4",
+    authDomain: "slashlearn-ffbee.firebaseapp.com",
+    databaseURL: "https://slashlearn-ffbee.firebaseio.com",
+    projectId: "slashlearn-ffbee",
+    storageBucket: "slashlearn-ffbee.appspot.com",
+    messagingSenderId: "244265562423",
+    appId: "1:244265562423:web:74bf5e32b11e87e0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  //references to authentication and storage
+  const auth = firebase.auth();
+  const database = firebase.firestore();
+</script>
+
+
+<!--Include authentication scripts-->
+<script src="/resources/js/main_script.js" type="text/javascript"></script>
+<script src="/resources/js/course_page.js" type="text/javascript"></script>
+<script src="/data_structures/resources/js/data_structures_main_script.js" type="text/javascript"></script>
+<script src="/resources/js/prism.js"></script>
+
+<!-- FIREBASE SET UP END-->
+
+</html>
