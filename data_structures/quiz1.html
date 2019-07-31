@@ -52,7 +52,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse_ds_concept_exercise" class="collapse" data-parent="#ds_concept_exercise_accordion">
+              <div id="collapse_ds_concept_exercise" class="collapse show" data-parent="#ds_concept_exercise_accordion">
                 <div class="course_card_body_blue">
 
                   <div id="carousel_ds_concept_exercise" class="carousel slide" data-ride="carousel"
@@ -349,7 +349,7 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse_time_complexity_exercise" class="collapse"
+              <div id="collapse_time_complexity_exercise" class="collapse show"
                 data-parent="#time_complexity_exercise_accordion">
                 <div class="course_card_body_blue">
 
@@ -393,11 +393,11 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">O(nlog(n) + 2<sup>A</sup>)
+                            <label class="answer_choice_rb">O(n*log(n) + 2<sup>A</sup>)
                               <input type="radio" name="time_complexity_exer2" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O(nlog(n<sup>2</sup>) + 2<sup>A</sup>)
+                            <label class="answer_choice_rb">O(n*log(n<sup>2</sup>) + 2<sup>A</sup>)
                               <input type="radio" name="time_complexity_exer2" value="2">
                               <span class="checkmark"></span>
                             </label>
@@ -405,7 +405,7 @@
                               <input type="radio" name="time_complexity_exer2" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O(nlog(n) + n + 2<sup>A</sup>)
+                            <label class="answer_choice_rb">O(n*log(n) + n + 2<sup>A</sup>)
                               <input type="radio" name="time_complexity_exer2" value="4">
                               <span class="checkmark"></span>
                             </label>
@@ -423,19 +423,19 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">O(5A + Nlog(N))
+                            <label class="answer_choice_rb">O(5A + N*log(N))
                               <input type="radio" name="time_complexity_exer3" value="1">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O(5AN + Nlog(N))
+                            <label class="answer_choice_rb">O(5AN + N*log(N))
                               <input type="radio" name="time_complexity_exer3" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O(ANlog(N))
+                            <label class="answer_choice_rb">O(AN*log(N))
                               <input type="radio" name="time_complexity_exer3" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O(A + Nlog(N))
+                            <label class="answer_choice_rb">O(A + N*log(N))
                               <input type="radio" name="time_complexity_exer3" value="4">
                               <span class="checkmark"></span>
                             </label>
@@ -487,7 +487,7 @@
                       <div class="carousel-item">
                         <div class="right_50 ">
                           <div class="answer_choice_rb_container">
-                            <label class="answer_choice_rb">O(N<sup>2</sup>log(N))
+                            <label class="answer_choice_rb">O(N<sup>2</sup>*log(N))
                               <input type="radio" name="time_complexity_exer5" value="1">
                               <span class="checkmark"></span>
                             </label>
@@ -495,11 +495,11 @@
                               <input type="radio" name="time_complexity_exer5" value="2">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O(Nlog(N))
+                            <label class="answer_choice_rb">O(N*log(N))
                               <input type="radio" name="time_complexity_exer5" value="3">
                               <span class="checkmark"></span>
                             </label>
-                            <label class="answer_choice_rb">O((N/2) * log(N) + N)
+                            <label class="answer_choice_rb">O((N/2)*log(N) + N)
                               <input type="radio" name="time_complexity_exer5" value="4">
                               <span class="checkmark"></span>
                             </label>
@@ -512,6 +512,160 @@
                         </div>
                         <div class="left_50">
                           <img src="/data_structures/resources/img/quiz1/time_complexity_exercise5.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">O(A<sup>2</sup>)
+                              <input type="radio" name="time_complexity_exer6" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(A + B)
+                              <input type="radio" name="time_complexity_exer6" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(A<sup>B</sup>)
+                              <input type="radio" name="time_complexity_exer6" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(AB)
+                              <input type="radio" name="time_complexity_exer6" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(3, 'time_complexity_exer6')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer6">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise6.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">O(n<sup>2</sup>) &lt O(n!) &lt O(2<sup>n</sup>)
+                              <input type="radio" name="time_complexity_exer7" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(log(log(n))) &lt O(log(n)) &lt O(&radic;<span style="text-decoration: overline">n</span>)
+                              <input type="radio" name="time_complexity_exer7" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(log(log(n))) &lt O(&radic;<span style="text-decoration: overline">n</span>) &lt O(log(n))
+                              <input type="radio" name="time_complexity_exer7" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">O(&radic;<span style="text-decoration: overline">n</span>) &lt O(log(log(n))) &lt O(log(n))
+                              <input type="radio" name="time_complexity_exer7" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(2, 'time_complexity_exer7')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer7">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise7.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Bubble Sort
+                              <input type="radio" name="time_complexity_exer8" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Insertion Sort
+                              <input type="radio" name="time_complexity_exer8" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Quick Sort
+                              <input type="radio" name="time_complexity_exer8" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Merge Sort
+                              <input type="radio" name="time_complexity_exer8" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(4, 'time_complexity_exer8')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer8">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise8.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">Bubble Sort
+                              <input type="radio" name="time_complexity_exer9" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Insertion Sort
+                              <input type="radio" name="time_complexity_exer9" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Quick Sort
+                              <input type="radio" name="time_complexity_exer9" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">Merge Sort
+                              <input type="radio" name="time_complexity_exer9" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(4, 'time_complexity_exer9')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer9">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise9.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="right_50 ">
+                          <div class="answer_choice_rb_container">
+                            <label class="answer_choice_rb">A: Making an array of n space
+                              <input type="radio" name="time_complexity_exer10" value="1">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">B: Recursive stack calls of n space
+                              <input type="radio" name="time_complexity_exer10" value="2">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">C: Iterative code in a for loop from 1 to n.
+                              <input type="radio" name="time_complexity_exer10" value="3">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A & B
+                              <input type="radio" name="time_complexity_exer10" value="4">
+                              <span class="checkmark"></span>
+                            </label>
+                            <label class="answer_choice_rb">A, B, & C
+                              <input type="radio" name="time_complexity_exer10" value="5">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <button type="button" class="check_answer_btn"
+                            onclick="exercise_answer(3, 'time_complexity_exer10')">Check Answer</button>
+                          <div class="exercise_result" id="time_complexity_exer10">
+                            <!-- Answer Result Injection-->
+                          </div>
+                        </div>
+                        <div class="left_50">
+                          <img src="/data_structures/resources/img/quiz1/time_complexity_exercise10.png">
                         </div>
                       </div>
                     </div>
