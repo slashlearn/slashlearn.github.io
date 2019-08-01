@@ -206,7 +206,7 @@ body .qanda {
 }
 /*exercise answer styles */
 .answer_choice_rb_container {
-    margin: 20% 3rem 0rem 3rem;
+    margin: 10rem 3rem 0rem 3rem;
 }
 .answer_choice_rb {
     color: white;
@@ -263,7 +263,7 @@ body .qanda {
   }
   
   /* Style the indicator (dot/circle) */
-  .answer_choice_rb .checkmark:after {
+.answer_choice_rb .checkmark:after {
     top: 9px;
     left: 9px;
     width: 8px;
